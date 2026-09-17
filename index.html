@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关西8天7夜亲子游计划书 · 2026.10.2-10.10</title>
+<style>
+  :root {
+    --primary: #2c5f8a;
+    --primary-light: #e8f0f8;
+    --accent: #e07b39;
+    --accent-light: #fdf0e6;
+    --green: #3a7d44;
+    --green-light: #eaf5eb;
+    --red: #c0392b;
+    --red-light: #fdedec;
+    --purple: #6b4c9a;
+    --purple-light: #f3eef9;
+    --gray: #6b7280;
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --border: #e2e5ea;
+    --radius: 10px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: #1f2937;
+    line-height: 1.7;
+    font-size: 15px;
+    padding: 0 0 40px;
+  }
+  .container { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+
+  .header {
+    background: linear-gradient(135deg, #2c5f8a 0%, #3a7d9e 100%);
+    color: #fff;
+    padding: 30px 0 24px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .header h1 { font-size: 22px; font-weight: 700; letter-spacing: 1px; margin-bottom: 6px; }
+  .header .subtitle { font-size: 13px; opacity: 0.85; }
+  .header .tags { margin-top: 10px; }
+  .header .tags span {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 2px 12px;
+    font-size: 12px;
+    margin: 2px 3px;
+  }
+
+  .tab-nav-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(247,248,250,0.96);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 10px 0 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tab-nav { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tab-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: #fff;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    color: var(--gray);
+    white-space: nowrap;
+    font-family: inherit;
+  }
+  .tab-btn:hover { border-color: var(--primary); color: var(--primary); }
+  .tab-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+  .tab-btn .tab-ico { margin-right: 3px; }
+
+  .tab-content { display: none; }
+  .tab-content.active { display: block; animation: fadeIn 0.18s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+  .section { margin-bottom: 24px; }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    padding-bottom: 8px;
+    border-bottom: 2.5px solid var(--primary);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title .icon { font-size: 20px; }
+
+  .day-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .day-header {
+    background: var(--primary-light);
+    padding: 12px 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .day-header .date { font-weight: 700; font-size: 16px; color: var(--primary); }
+  .day-header .badge {
+    font-size: 12px; padding: 2px 10px; border-radius: 12px;
+    background: var(--primary); color: #fff; font-weight: 600;
+  }
+  .day-header .badge.green { background: var(--green); }
+  .day-header .badge.orange { background: var(--accent); }
+  .day-header .badge.red { background: var(--red); }
+  .day-header .badge.purple { background: var(--purple); }
+  .day-header .hotel { font-size: 13px; color: var(--gray); margin-left: auto; }
+  .day-body { padding: 16px 18px; }
+
+  .info-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+  .info-item {
+    flex: 1 1 200px; background: #f9fafb; border-radius: 8px;
+    padding: 10px 14px; font-size: 13.5px;
+  }
+  .info-item .label { font-weight: 600; color: var(--gray); font-size: 12px; display: block; margin-bottom: 2px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 10px 0; }
+  th {
+    background: var(--primary-light); color: var(--primary); font-weight: 600;
+    text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--primary);
+    font-size: 12.5px; white-space: nowrap;
+  }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafbfc; }
+
+  .bf-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 12px; margin-top: 12px;
+  }
+  .bf-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 13px 15px; position: relative;
+  }
+  .bf-card .name { font-weight: 700; font-size: 14px; color: #1f2937; margin-bottom: 4px; }
+  .bf-card .meta { font-size: 12px; color: var(--gray); margin-bottom: 5px; }
+  .bf-card .price { font-weight: 700; color: var(--accent); font-size: 14.5px; }
+  .bf-card .desc { font-size: 12.5px; color: #4b5563; margin-top: 5px; }
+  .bf-card .recommend {
+    display: inline-block; font-size: 11px; padding: 1px 8px;
+    border-radius: 10px; background: var(--green-light); color: var(--green);
+    font-weight: 600; margin-top: 7px;
+  }
+  .bf-card.backup {
+    border: 1.5px dashed var(--purple);
+    background: var(--purple-light);
+  }
+  .bf-card.backup .name { color: var(--purple); }
+  .bf-card.backup .recommend { background: #e8ddf5; color: var(--purple); }
+  .bf-card.avoid {
+    border: 1.5px dashed var(--red);
+    background: var(--red-light);
+  }
+  .bf-card.avoid .name { color: var(--red); }
+  .bf-card.avoid .recommend { background: #fadbd8; color: var(--red); }
+
+  .callout {
+    border-radius: 8px; padding: 12px 16px; font-size: 13.5px;
+    margin: 12px 0; border-left: 4px solid;
+  }
+  .callout.info { background: var(--primary-light); border-color: var(--primary); }
+  .callout.warn { background: var(--red-light); border-color: var(--red); }
+  .callout.tip { background: var(--green-light); border-color: var(--green); }
+  .callout.accent { background: var(--accent-light); border-color: var(--accent); }
+  .callout.backup-box { background: var(--purple-light); border-color: var(--purple); }
+  .callout strong { font-weight: 700; }
+  .callout ol, .callout ul { margin: 6px 0 0 20px; }
+  .callout li { padding: 2px 0; }
+
+  .tag {
+    display: inline-block; font-size: 11.5px; padding: 1px 8px;
+    border-radius: 10px; font-weight: 600; margin-right: 4px;
+  }
+  .tag.green { background: var(--green-light); color: var(--green); }
+  .tag.red { background: var(--red-light); color: var(--red); }
+  .tag.blue { background: var(--primary-light); color: var(--primary); }
+  .tag.orange { background: var(--accent-light); color: var(--accent); }
+  .tag.yellow { background: #fef9e7; color: #b7950b; }
+  .tag.purple { background: var(--purple-light); color: var(--purple); }
+
+  .budget-table td:last-child { text-align: right; font-weight: 600; }
+  .budget-total { background: var(--primary-light); font-weight: 700; }
+
+  .backup-header {
+    background: linear-gradient(135deg, #3a7d44, #4a9d54);
+    color: #fff; padding: 14px 18px;
+    border-radius: var(--radius) var(--radius) 0 0;
+    font-weight: 700; font-size: 16px;
+  }
+
+  .map-box {
+    background: #f0f4f8; border-radius: 8px; padding: 12px 16px;
+    font-size: 13px; margin-top: 10px; border: 1px dashed var(--primary);
+  }
+  .map-box strong { color: var(--primary); }
+  .map-box code {
+    background: #fff; padding: 1px 6px; border-radius: 4px;
+    font-size: 12.5px; border: 1px solid var(--border);
+  }
+
+  .shop-table td:first-child { font-weight: 600; white-space: nowrap; }
+
+  .checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+  }
+  .checklist-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .checklist-card h4 {
+    font-size: 14.5px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .checklist-card label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    padding: 4px 0;
+    cursor: pointer;
+    line-height: 1.5;
+  }
+  .checklist-card input[type="checkbox"] {
+    margin-top: 4px;
+    accent-color: var(--primary);
+    flex-shrink: 0;
+  }
+  .checklist-card label:hover { color: var(--primary); }
+
+  .sub-heading {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 18px 0 8px;
+    padding-left: 8px;
+    border-left: 3px solid var(--primary);
+  }
+
+  .map-link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .map-link-card {
+    background: #f9fafb;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+  }
+  .map-link-card .place-name {
+    font-weight: 700;
+    font-size: 13.5px;
+    color: #1f2937;
+    margin-bottom: 4px;
+  }
+  .map-link-card .place-desc {
+    font-size: 12px;
+    color: var(--gray);
+    margin-bottom: 10px;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+  .map-link-card a {
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    background: var(--primary);
+    padding: 5px 14px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    align-self: flex-start;
+    transition: background 0.15s;
+  }
+  .map-link-card a:hover { background: #1f4a6e; }
+  .map-link-card a::before { content: "📍 "; }
+
+  .step-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    position: relative;
+  }
+  .step-list::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    bottom: 12px;
+    width: 2px;
+    background: var(--primary-light);
+  }
+  .step-list li {
+    position: relative;
+    padding: 8px 0 8px 44px;
+    font-size: 13.5px;
+  }
+  .step-list li .step-num {
+    position: absolute;
+    left: 4px;
+    top: 8px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .step-list li .step-title {
+    font-weight: 700;
+    color: #1f2937;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .step-list li .step-desc {
+    color: #4b5563;
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 18px; }
+    .day-header { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .day-header .hotel { margin-left: 0; }
+    table { font-size: 12px; }
+    th, td { padding: 6px 6px; }
+    .bf-grid { grid-template-columns: 1fr; }
+    .checklist-grid { grid-template-columns: 1fr; }
+    .map-link-grid { grid-template-columns: 1fr; }
+    .tab-btn { padding: 5px 10px; font-size: 11.5px; }
+  }
+
+  @media print {
+    body { background: #fff; font-size: 12px; }
+    .header { background: #2c5f8a !important; -webkit-print-color-adjust: exact; }
+    .tab-nav-wrap { display: none !important; }
+    .tab-content { display: block !important; page-break-before: always; }
+    .tab-content:first-of-type { page-break-before: avoid; }
+    .day-card { break-inside: avoid; box-shadow: none; border: 1px solid #ccc; }
+    .map-link-card a { background: #2c5f8a !important; -webkit-print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <h1>🗾 关西8天7夜亲子游计划书</h1>
+    <div class="subtitle">2026.10.2 — 10.10 · 3岁小朋友同行</div>
+    <div class="tags">
+      <span>👨‍👩‍👧 亲子游</span>
+      <span>🏨 临空2晚 · 神户2晚 · 大阪2晚 · 京都2晚</span>
+      <span>💡 点击下方标签切换查看</span>
+    </div>
+  </div>
+</div>
+
+<div class="tab-nav-wrap">
+  <div class="container">
+    <div class="tab-nav" id="tabNav">
+      <button class="tab-btn active" data-tab="tab-overview"><span class="tab-ico">📋</span>总览</button>
+      <button class="tab-btn" data-tab="tab-1002"><span class="tab-ico">🌙</span>10.2 抵达</button>
+      <button class="tab-btn" data-tab="tab-1003"><span class="tab-ico">🌳</span>10.3 神户</button>
+      <button class="tab-btn" data-tab="tab-1004"><span class="tab-ico">🐑</span>10.4 六甲山+有马</button>
+      <button class="tab-btn" data-tab="tab-1005"><span class="tab-ico">🚃</span>10.5 神户→大阪</button>
+      <button class="tab-btn" data-tab="tab-1006"><span class="tab-ico">🦌</span>10.6 奈良+生驹山</button>
+      <button class="tab-btn" data-tab="tab-1007"><span class="tab-ico">🚃</span>10.7 大阪→京都</button>
+      <button class="tab-btn" data-tab="tab-1008"><span class="tab-ico">🎋</span>10.8 岚山</button>
+      <button class="tab-btn" data-tab="tab-1009"><span class="tab-ico">🚂</span>10.9 铁道博物馆</button>
+      <button class="tab-btn" data-tab="tab-1010"><span class="tab-ico">✈️</span>10.10 返程</button>
+      <button class="tab-btn" data-tab="tab-transport"><span class="tab-ico">🎫</span>交通票券</button>
+      <button class="tab-btn" data-tab="tab-backup"><span class="tab-ico">🔄</span>备选方案</button>
+      <button class="tab-btn" data-tab="tab-budget"><span class="tab-ico">💰</span>预算&提醒</button>
+      <button class="tab-btn" data-tab="tab-checklist"><span class="tab-ico">✅</span>出行清单</button>
+      <button class="tab-btn" data-tab="tab-map"><span class="tab-ico">🗺️</span>地图导航</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ==================== TAB: 总览 ==================== -->
+<div class="tab-content active" id="tab-overview">
+  <div class="section">
+    <div class="section-title"><span class="icon">📋</span> 行程总览</div>
+
+    <div class="callout info">
+      <strong>💡 关于实景照片：</strong>本计划书所有景点、餐厅、商场都配有 <strong>「📍 在 Google Maps 查看实景」</strong> 按钮。点击后会直接跳转到 Google Maps 对应页面，你可以在那里查看<strong>用户上传的真实照片、评分、营业时间和最新评价</strong>。
+    </div>
+
+    <div class="callout tip">
+      <strong>✅ 已交换 10.3 和 10.4：</strong>10.2 深夜抵达后，10.3 先在神户市内轻松玩，10.4 再去六甲山+有马，行李放酒店，轻装出行，节奏更舒服。
+    </div>
+
+    <h4 class="sub-heading">🏨 住宿一览</h4>
+    <table>
+      <thead>
+        <tr><th>日期</th><th>酒店</th><th>区域</th><th>备注</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>10.2（周五）</td><td><strong>临空奥德西斯套房酒店</strong></td><td>临空城</td><td>Odysis Suites Osaka Airport Hotel · 临空城站旁</td></tr>
+        <tr><td>10.3（周六）</td><td><strong>神户大仓酒店</strong></td><td>神户港</td><td>Hotel Okura Kobe · 美利坚公园旁，港景房</td></tr>
+        <tr><td>10.4（周日）</td><td><strong>神户大仓酒店</strong></td><td>神户港</td><td>Hotel Okura Kobe · 连住第2晚</td></tr>
+        <tr><td>10.5（周一）</td><td><strong>大阪梅田格兰比亚酒店</strong></td><td>大阪梅田</td><td>Hotel Granvia Osaka · JR大阪站直连</td></tr>
+        <tr><td>10.6（周二）</td><td><strong>大阪梅田格兰比亚酒店</strong></td><td>大阪梅田</td><td>Hotel Granvia Osaka · 连住第2晚</td></tr>
+        <tr><td>10.7（周三）</td><td><strong>京都梅小路酒店</strong></td><td>京都梅小路</td><td>梅小路公园旁，近京都铁道博物馆</td></tr>
+        <tr><td>10.8（周四）</td><td><strong>京都梅小路酒店</strong></td><td>京都梅小路</td><td>连住第2晚</td></tr>
+        <tr><td>10.9（周五）</td><td><strong>临空奥德西斯套房酒店</strong></td><td>临空城</td><td>返程前最后一晚，离关西机场近</td></tr>
+        <tr><td>10.10（周六）</td><td>—</td><td>—</td><td>返程</td></tr>
+      </tbody>
+    </table>
+
+    <h4 class="sub-heading">📅 每日行程总览</h4>
+    <table>
+      <thead>
+        <tr><th>日期</th><th>住宿</th><th>主要区域</th><th>主题</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>10.2（周五）</td><td>临空奥德西斯套房酒店</td><td>关西机场 → 临空城</td><td>🌙 深夜抵达</td></tr>
+        <tr><td>10.3（周六）</td><td>神户大仓酒店</td><td>临空城 → 神户</td><td>🌳 神户自由日（须磨离宫/王子动物园+购物）</td></tr>
+        <tr><td>10.4（周日）</td><td>神户大仓酒店</td><td>神户 → 六甲山 → 有马温泉</td><td>🐑 六甲山牧场 + 🎣 有马亲子游</td></tr>
+        <tr><td>10.5（周一）</td><td>大阪梅田格兰比亚酒店</td><td>神户 → 大阪梅田</td><td>🚃 移动 + 梅田购物</td></tr>
+        <tr><td>10.6（周二）</td><td>大阪梅田格兰比亚酒店</td><td>奈良 + 生驹山</td><td>🦌 奈良公园 + 🎡 生驹山上游乐园</td></tr>
+        <tr><td>10.7（周三）</td><td>京都梅小路酒店</td><td>大阪 → 京都</td><td>🚃 移动 + 梅小路公园</td></tr>
+        <tr><td>10.8（周四）</td><td>京都梅小路酒店</td><td>京都岚山</td><td>🎋 竹林 + 渡月桥</td></tr>
+        <tr><td>10.9（周五）</td><td>临空奥德西斯套房酒店</td><td>京都 → 临空城</td><td>🚂 铁道博物馆 + 购物</td></tr>
+        <tr><td>10.10（周六）</td><td>—</td><td>临空城 → 关西机场</td><td>✈️ 返程</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== TAB: 10.2 ==================== -->
+<div class="tab-content" id="tab-1002">
+  <div class="section">
+    <div class="section-title"><span class="icon">🌙</span> 10.2（周五）深夜抵达 · 关西机场 → 临空城</div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <span class="date">10.2 周五</span>
+        <span class="badge">深夜抵达</span>
+        <span class="hotel">🏨 临空奥德西斯套房酒店（Odysis Suites Osaka Airport Hotel）</span>
+      </div>
+      <div class="day-body">
+        <div class="callout warn">
+          <strong>⚠️ 酒店没有从机场到酒店的接驳车！</strong>免费接驳车只提供<strong>从酒店到关西机场</strong>的单向送机服务，需入住时前台预约。时刻表：5:10、5:55、6:45、7:30、8:15、8:55（仅上午）。
+        </div>
+
+        <h4 class="sub-heading">📋 出发前（建议出发前3天内完成）</h4>
+
+        <div class="callout accent">
+          <strong>① 填写 Visit Japan Web (VJW)</strong>
+          <ul>
+            <li><strong>网址：</strong>https://www.vjw.digital.go.jp/ （认准官方域名，避免假网站）</li>
+            <li><strong>需要准备：</strong>护照、航班信息、酒店地址（日文或英文）</li>
+            <li><strong>填写内容：</strong>
+              <ol>
+                <li>建立账号 → 新增同行家人（<strong>3岁小朋友也需要登记护照信息</strong>）</li>
+                <li>登录“新的入境、回国预定”</li>
+                <li>填写“检疫（健康状况确认）”、“入境审查”、“海关申报”</li>
+              </ol>
+            </li>
+            <li><strong>重要变化：</strong>2026年起，入境审查和海关申报的 QR Code <strong>已经合并为一组</strong>，不用再分开截图，一个 QR 码走完全程</li>
+            <li><strong>截图保存：</strong>完成后把 QR 码 <strong>截图保存到手机相册</strong>，机场信号可能不稳定，截图最保险</li>
+          </ul>
+        </div>
+
+        <div class="callout accent">
+          <strong>② 确认航班航站楼</strong>
+          <ul>
+            <li>关西机场有 <strong>第1航站楼（T1）</strong> 和 <strong>第2航站楼（T2）</strong></li>
+            <li>乐桃航空（Peach）等廉航通常停靠 <strong>T2</strong>，传统航空多在 <strong>T1</strong></li>
+            <li>T1 和 T2 之间需要乘坐<strong>免费接驳巴士</strong>，约 7-10 分钟</li>
+            <li>出发前确认好航站楼，下飞机后跟着指示走就行</li>
+          </ul>
+        </div>
+
+        <h4 class="sub-heading">✈️ 下飞机后：入境三步走</h4>
+
+        <ol class="step-list">
+          <li>
+            <span class="step-num">1</span>
+            <span class="step-title">检疫</span>
+            <span class="step-desc">下飞机后先经过检疫区域，通常只是测体温或快速确认健康状况。如果 VJW 上已填好检疫信息，直接走电子通道；没填的话现场也有纸质表格。</span>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <span class="step-title">入境审查（最关键的环节）</span>
+            <span class="step-desc">
+              <strong>✅ 推荐走“共同自助通关机（共同KIOSK）”通道：</strong>2025年4月起关西机场启用了这台机器，可以一次完成入境审查 + 海关申报。操作流程：扫描护照 → 扫描 VJW QR 码 → 人脸识别 + 指纹扫描 → 按指示前往指定通道。<br>
+              <strong>⚠️ 带3岁小朋友特别注意：</strong>共同自助通关机有 <strong>身高限制——未满135cm者无法使用</strong>。3岁小朋友肯定不满足，所以<strong>建议直接走人工审查通道</strong>，不要浪费时间在机器前排队。持 VJW QR 码走人工通道同样能加快速度。<br>
+              <strong>❌ 如果没有提前填 VJW：</strong>需要在飞机上或入境大厅填写纸质“外国人入境记录卡”，排队时间会明显更长。<br>
+              <strong>⏰ 机器开放时间：</strong>T1 为 8:00-22:00，T2 为 9:00-21:00。你们晚10点后抵达，机器可能已关闭，直接走人工通道即可。
+            </span>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <span class="step-title">领取行李 + 海关申报</span>
+            <span class="step-desc">
+              在行李转盘处确认自己航班的行李提取号码，领取托运行李。<br>
+              <strong>海关申报：</strong>如果已用 VJW，海关区域也有电子申报闸门（人脸识别通过）；如果没有，走人工通道提交纸质申报单。<br>
+              <strong>⚠️ 注意：</strong>携带蔬菜、水果、肉制品入境必须申报，日本海关对此检查较严。
+            </span>
+          </li>
+        </ol>
+
+        <h4 class="sub-heading">🚃 出机场后：怎么去临空奥德西斯套房酒店</h4>
+
+        <table>
+          <thead><tr><th>方案</th><th>路线</th><th>时间</th><th>费用</th><th>适合度</th></tr></thead>
+          <tbody>
+            <tr><td><strong>A · 电车</strong></td><td>关西机场站 → 南海电铁/JR → 临空城站 → 步行至酒店</td><td>约5分钟</td><td><strong>¥370/人</strong></td><td><span class="tag green">最省钱</span></td></tr>
+            <tr><td><strong>B · 出租车</strong></td><td>关西机场 → 酒店（直达门口）</td><td>约8-10分钟</td><td><strong>约 ¥5,000-6,000</strong></td><td><span class="tag blue">最方便</span></td></tr>
+            <tr><td><strong>C · 预约接送</strong></td><td>KLOOK/KKDAY 预订中文接送</td><td>约10分钟</td><td><strong>约 ¥4,000-5,000</strong></td><td><span class="tag orange">最省心</span></td></tr>
+          </tbody>
+        </table>
+
+        <div class="callout tip">
+          <strong>💡 推荐：</strong>航班准点优先选<strong>方案A（电车）</strong>，到临空城站后步行即到。行李多或小朋友已睡着，直接选<strong>方案B（出租车）</strong>。<br>
+          <strong>⏰ 注意：</strong>临空城站末班车约 <strong>23:50</strong>，如果航班晚于此时间落地，只能选出租车。
+        </div>
+
+        <div class="callout info">
+          <strong>🧳 方式C · Sky Shuttle 接驳巴士说明：</strong>关西机场 → 临空城奥特莱斯，车程约15分钟，票价 ¥300。<strong>但班次约每小时一班</strong>，深夜时段可能已停运，不如电车灵活，不太推荐。
+        </div>
+
+        <h4 class="sub-heading">💡 带3岁小朋友的特别提醒</h4>
+        <div class="callout tip">
+          <ol>
+            <li><strong>共同自助通关机用不了：</strong>身高不足135cm，直接走人工通道，别在机器前排队</li>
+            <li><strong>婴儿车：</strong>入境审查时通常需要折叠通过，建议提前准备好</li>
+            <li><strong>深夜抵达：</strong>如果小朋友在飞机上睡着了，优先选出租车直达酒店，避免拖着行李和孩子在车站换乘</li>
+            <li><strong>VJW 截图：</strong>手机截图保存 QR 码，机场 Wi-Fi 可能不稳定</li>
+            <li><strong>IC卡提前充好值：</strong>临空城站的电车售票机深夜可能排队，提前用 ICOCA/Suica 刷卡进站最快</li>
+          </ol>
+        </div>
+
+        <h4 class="sub-heading">🍽 临空城深夜/早餐选择</h4>
+        <div class="bf-grid">
+          <div class="bf-card">
+            <div class="name">临空城站周边便利店</div>
+            <div class="meta">临空城站步行1分钟 · 24小时</div>
+            <div class="price">¥300-800/人</div>
+            <div class="desc">7-11、全家、罗森，可买饭团、三明治、饮料。深夜抵达最方便的选择</div>
+            <span class="recommend">🌙 深夜可用</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">临空城奥特莱斯美食广场</div>
+            <div class="meta">临空城站旁 · 10:00-20:00</div>
+            <div class="price">¥800-1,500/人</div>
+            <div class="desc">多家餐厅可选，适合10.10返程前用餐</div>
+            <span class="recommend">✅ 选择丰富</span>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">📍 Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">临空奥德西斯套房酒店</div>
+            <div class="place-desc">Odysis Suites Osaka Airport Hotel · 临空城站旁</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Odysis+Suites+Osaka+Airport+Hotel" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">临空城站</div>
+            <div class="place-desc">りんくうタウン駅 · 南海电铁/JR共用站</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=りんくうタウン駅" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">关西机场第1航站楼</div>
+            <div class="place-desc">関西国際空港 第1ターミナル · 传统航空主要航站楼</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=関西国際空港+第1ターミナル" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <div class="map-box">
+          <strong>🗺 地图导航：</strong>搜索 <code>Odysis Suites Osaka Airport Hotel</code> 或 <code>关西机场 → 临空城站</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 10.3 神户 ==================== -->
+<div class="tab-content" id="tab-1003">
+  <div class="section">
+    <div class="section-title"><span class="icon">🌳</span> 10.3（周六）临空城 → 神户 · 神户自由日</div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <span class="date">10.3 周六</span>
+        <span class="badge orange">神户自由日</span>
+        <span class="hotel">🏨 神户大仓酒店（Hotel Okura Kobe）</span>
+      </div>
+      <div class="day-body">
+
+        <div class="callout info">
+          <strong>🧳 行李寄存：</strong>从临空城到神户三宫后，先前往神户大仓酒店寄存行李（24小时前台免费寄存），再轻松出发去玩。
+        </div>
+
+        <h4 class="sub-heading">🚃 临空城 → 神户三宫 交通</h4>
+        <table>
+          <thead><tr><th>方式</th><th>时间</th><th>费用</th><th>备注</th></tr></thead>
+          <tbody>
+            <tr><td><strong>阪神电铁</strong></td><td>约34分钟</td><td>¥460</td><td>直达神户三宫，最方便</td></tr>
+          </tbody>
+        </table>
+        <div class="callout tip">
+          <strong>👶 推荐：</strong>8:00从临空城出发，约8:40到达神户三宫。先去大仓酒店放行李，然后开始神户市内游玩。
+        </div>
+
+        <h4 class="sub-heading">🌳 选项A：须磨离宫公园（推荐）</h4>
+        <table>
+          <thead><tr><th>项目</th><th>详情</th></tr></thead>
+          <tbody>
+            <tr><td>门票</td><td>大人¥400，中小学生¥200，<strong>学龄前免费</strong></td></tr>
+            <tr><td>营业时间</td><td>9:00-17:00（入园至16:30）</td></tr>
+            <tr><td>休园日</td><td><span class="tag red">周四休</span>（如遇假日则顺延）· 10.3周六正常开放</td></tr>
+            <tr><td>交通</td><td>从三宫乘阪神/山阳电铁至<strong>月见山站</strong>或<strong>须磨寺站</strong>，步行约10分钟</td></tr>
+            <tr><td>3岁适合度</td><td>★★★★☆ 园内有儿童游乐区，秋季玫瑰园很美，草坪开阔适合跑动</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">🎡 选项B：神户市立王子动物园</h4>
+        <table>
+          <thead><tr><th>项目</th><th>详情</th></tr></thead>
+          <tbody>
+            <tr><td>评分</td><td>Yahoo地图 <strong>4.42/5</strong>（1,177条评价）</td></tr>
+            <tr><td>门票</td><td>成人¥600，<strong>中学生以下免费</strong></td></tr>
+            <tr><td>营业时间</td><td>9:00-17:00（3-10月），<strong>周三休</strong> · 10.3周六正常开放</td></tr>
+            <tr><td>交通</td><td>阪急王子公园站步行3分钟</td></tr>
+            <tr><td>3岁适合度</td><td>★★★★★ 园区紧凑不用走太多路，<strong>还有一个小游乐园</strong>可以搭摩天轮、赛车、溜滑梯。动物状态好，红浣熊、北极熊、长颈鹿都很活跃</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">🌿 选项C：布引香草园</h4>
+        <table>
+          <thead><tr><th>项目</th><th>详情</th></tr></thead>
+          <tbody>
+            <tr><td>门票</td><td><strong>0-5岁儿童免费</strong>，缆车需另购票</td></tr>
+            <tr><td>营业时间</td><td>10:00-20:30（季节变动）</td></tr>
+            <tr><td>交通</td><td>JR新神户站步行至缆车站，乘缆车约10分钟</td></tr>
+            <tr><td>3岁适合度</td><td>★★★★★ 缆车平稳且无障碍，婴儿车可直接上。园内有吊床、花田、香草感官花园</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">📍 神户亲子景点 · Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">须磨离宫公园</div>
+            <div class="place-desc">須磨離宮公園 · 皇室别墅旧址，玫瑰园与儿童游乐区</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=須磨離宮公園" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">神户市立王子动物园</div>
+            <div class="place-desc">神戸市立王子動物園 · 中学生以下免费，附设小游乐园</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=神戸市立王子動物園" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">布引香草园</div>
+            <div class="place-desc">神戸布引ハーブ園 · 缆车直达山顶，花田与香草感官花园</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=神戸布引ハーブ園" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">美利坚公园 · 神户港塔</div>
+            <div class="place-desc">メリケンパーク · 酒店后门步行1分钟，BE KOBE纪念碑</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=メリケンパーク+神戸" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">神户大仓酒店</div>
+            <div class="place-desc">ホテルオークラ神戸 · 美利坚公园旁，港景房</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=ホテルオークラ神戸" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🍽 神户早餐推荐（大仓酒店周边 · 步行10-15分钟）</h4>
+        <div class="bf-grid">
+          <div class="bf-card">
+            <div class="name">珈琲春秋 Kobe 三宫店</div>
+            <div class="meta">三宫本通 · 步行约12分钟 · 7:00-11:30</div>
+            <div class="price">¥580/人（约¥29）</div>
+            <div class="desc">吐司/三明治/华夫饼套餐，含现磨咖啡。4层楼座位多，环境安静</div>
+            <span class="recommend">⭐ 性价比最高</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">元町サントス</div>
+            <div class="meta">元町商店街 · JR元町站步行2分钟 · 创业60年</div>
+            <div class="price">¥750-800/人（约¥38-40）</div>
+            <div class="desc">老字号纯喫茶，迷你三明治/吐司套餐，复古氛围，1-2楼座位宽敞</div>
+            <span class="recommend">☕ 经典体验</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">エビアンコーヒー</div>
+            <div class="meta">元町 · 平日8:30营业 · Tabelog百名店</div>
+            <div class="price">¥550-800/人（约¥28-40）</div>
+            <div class="desc">招牌布丁套餐¥800，卷三明治¥600，虹吸壶咖啡，老派神户氛围</div>
+            <span class="recommend">🍮 招牌布丁</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">カフェ サンタマリア 三宫店</div>
+            <div class="meta">JR三宫站高架下 · 7:30-20:00</div>
+            <div class="price">¥660/人（约¥33）</div>
+            <div class="desc">蛋糕+饮品套餐¥660，122席大空间，有电源Wi-Fi，适合带娃</div>
+            <span class="recommend">🪑 空间大</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">喫茶ボントン（三宫本通）</div>
+            <div class="meta">三宫·花时计前站步行3分钟 · 创业74年</div>
+            <div class="price">¥600-880/人（约¥30-44）</div>
+            <div class="desc">19种早餐选择，吐司¥600、小仓吐司¥660、水果三明治¥880，供应至13:00</div>
+            <span class="recommend">🍞 选择最多</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">Mother Moon Cafe</div>
+            <div class="meta">神户市中央区 · 三宫站步行约10分钟</div>
+            <div class="price">¥1,000-1,500/人</div>
+            <div class="desc">神户人气咖啡厅，招牌「大人の子様ランチ」一盘搞定，有露台座位</div>
+            <span class="recommend">🍽 悠闲早午餐</span>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">📍 神户早餐 · Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">珈琲春秋 三宫店</div>
+            <div class="place-desc">珈琲春秋 Kobe 三宮店 · 平价早餐套餐</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=珈琲春秋+三宮店" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">元町サントス</div>
+            <div class="place-desc">元町サントス · 创业60年老字号喫茶店</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=元町サントス" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">エビアンコーヒー</div>
+            <div class="place-desc">エビアンコーヒー · Tabelog百名店，招牌布丁</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=エビアンコーヒー+神戸" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">喫茶ボントン</div>
+            <div class="place-desc">喫茶ボントン · 19种早餐可选，供应至13:00</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=喫茶ボントン+三宮" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">Mother Moon Cafe</div>
+            <div class="place-desc">Mother Moon Cafe · 神户人气咖啡厅，露台座位</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Mother+Moon+Cafe+神戸" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🛍️ 大仓酒店周边商场与品牌</h4>
+        <table class="shop-table">
+          <thead><tr><th>商场</th><th>位置</th><th>主要品牌与特色</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>umie</strong></td>
+              <td>步行约10-15分钟</td>
+              <td><strong>时尚</strong>：UNIQLO、GU、ZARA、niko and...、URBAN RESEARCH DOORS、AZUL by moussy<br>
+                <strong>杂货</strong>：MUJI、PLAZA、3COINS+plus、Seria<br>
+                <strong>亲子</strong>：KIDDY LAND（Sanrio、史努比、吉伊卡哇）<br>
+                <strong>餐饮</strong>：Eggs'n Things、丸亀製麵、AEON STYLE 超市</td>
+            </tr>
+            <tr><td><strong>Mosaic广场</strong></td><td>步行约10-12分钟</td><td>海景餐厅、神户限定伴手礼、龙猫共和国、史努比主题店</td></tr>
+            <tr><td><strong>大丸百货</strong></td><td>步行约10分钟</td><td><strong>化妆品</strong>：SK-II、YSL Beauté、IPSA<br><strong>服饰</strong>：agnès b.、Samantha Thavasa、Theory<br><strong>儿童</strong>：MIKI HOUSE、BAPE KIDS®、pom ponette junior</td></tr>
+            <tr><td><strong>神户阪急</strong></td><td>接驳车至三宫站，步行3-5分钟</td><td>MUJI（新馆5F・6F）、高端服饰、化妆品</td></tr>
+            <tr><td><strong>三宫中心街</strong></td><td>接驳车至三宫站，步行2分钟</td><td>优衣库（Style Plaza 1F-5F，兵库县最大门店）</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">💸 神户商场退税政策</h4>
+        <table>
+          <thead><tr><th>商场</th><th>退税方式</th><th>手续费</th><th>关键提醒</th></tr></thead>
+          <tbody>
+            <tr><td><strong>umie</strong></td><td>部分店铺支持<strong>店内直接免税</strong></td><td>通常无</td><td>结账时直接扣除消费税，最方便</td></tr>
+            <tr><td><strong>大丸百货</strong></td><td>需到<strong>B2层退税柜台</strong>统一办理</td><td><strong>1.55%</strong></td><td>退税比例约8%（扣手续费后）；凭护照可领5%折扣券</td></tr>
+            <tr><td><strong>Mosaic广场</strong></td><td>与umie同体系</td><td>通常无</td><td>政策与umie基本一致</td></tr>
+            <tr><td><strong>神户阪急</strong></td><td>9楼退税柜台统一办理</td><td>未明确</td><td>凭护照可领<strong>5%优惠券</strong>，全馆适用</td></tr>
+          </tbody>
+        </table>
+
+        <div class="callout tip">
+          <strong>💡 户外品牌购物提示：</strong>神户三宫站周边是“户外天堂”。<strong>好日山荘</strong>（三ノ宮町1丁目9−1 センタープラザ 3F）始祖鸟货品非常全，<strong>可以退税</strong>。<strong>Montbell</strong>（神户市中央区伊藤町109）两层楼店铺。<strong>THE NORTH FACE / HELLY HANSEN 神戸</strong>（KOKO HOTEL 1F）可一次逛两个品牌。
+        </div>
+
+        <h4 class="sub-heading">📍 神户购物 · Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">umie 购物中心</div>
+            <div class="place-desc">神戸ハーバーランド umie · 神户港最大商场</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=神戸ハーバーランド+umie" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">大丸神户店</div>
+            <div class="place-desc">大丸神戸店 · 老牌百货，B2退税柜台</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=大丸神戸店" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">神户阪急</div>
+            <div class="place-desc">神戸阪急 · MUJI新馆5F・6F，9楼退税</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=神戸阪急" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">三宫中心街</div>
+            <div class="place-desc">三宮センター街 · 优衣库兵库县最大店</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=三宮センター街" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">好日山荘 三宫店</div>
+            <div class="place-desc">好日山荘 三宮店 · 始祖鸟货品全，可退税</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=好日山荘+三宮店" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">Montbell 神户店</div>
+            <div class="place-desc">モンベル 神戸店 · 两层楼店铺，货品多</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=モンベル+神戸店" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🔄 备选餐厅（神户 · 大仓酒店周边）</h4>
+        <div class="bf-grid">
+          <div class="bf-card backup">
+            <div class="name">カプリチョーザ 神户Mosaic店</div>
+            <div class="meta">Mosaic广场 · 步行约10分钟</div>
+            <div class="price">¥1,000-2,000/人</div>
+            <div class="desc">休闲意大利餐厅，有儿童菜单，可推婴儿车入店，有儿童椅</div>
+            <span class="recommend">🍕 意式休闲</span>
+          </div>
+          <div class="bf-card backup">
+            <div class="name">大丸神户店9F餐厅街</div>
+            <div class="meta">大丸百货 · 步行约10分钟</div>
+            <div class="price">¥1,000-2,500/人</div>
+            <div class="desc">多家餐厅可选，有儿童座椅。大丸百货内还设有儿童游乐区和托儿室</div>
+            <span class="recommend">✅ 选择丰富</span>
+          </div>
+        </div>
+
+        <div class="map-box">
+          <strong>🗺 地图导航：</strong>依次搜索 <code>神户大仓酒店</code> → <code>须磨离宫公园</code> 或 <code>王子动物园</code> → <code>umie</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 10.4 六甲山+有马 ==================== -->
+<div class="tab-content" id="tab-1004">
+  <div class="section">
+    <div class="section-title"><span class="icon">🐑</span> 10.4（周日）六甲山牧场 + 有马亲子游</div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <span class="date">10.4 周日</span>
+        <span class="badge green">六甲山牧场</span>
+        <span class="badge purple">有马亲子游</span>
+        <span class="hotel">🏨 神户大仓酒店（Hotel Okura Kobe）</span>
+      </div>
+      <div class="day-body">
+
+        <div class="callout info">
+          <strong>🧳 行李寄存：</strong>10.4从神户大仓酒店出发，行李可继续存放在酒店（24小时前台免费寄存），轻装出行。
+        </div>
+
+        <div class="callout accent">
+          <strong>🎯 路线核心思路：</strong>上午六甲山牧场（周日有牧羊犬表演+13:30绵羊赛跑）→ 下午有马温泉（亲子趣味优先：鳟鱼池、玩具博物馆、免费足汤）→ 有马晚餐 → 神姬巴士直返神户三宫。<strong>不经过六甲山回程。</strong>
+        </div>
+
+        <h4 class="sub-heading">⏰ 一日游详细时间轴</h4>
+        <table>
+          <thead><tr><th>时间</th><th>活动</th><th>备注</th></tr></thead>
+          <tbody>
+            <tr><td><strong>8:00</strong></td><td>神户大仓酒店出发，前往三宫站</td><td>接驳车或出租车，约10-20分钟</td></tr>
+            <tr><td><strong>8:30</strong></td><td>三宫站 → 六甲缆车下站（市巴士2路/18路）</td><td>约15-20分钟，班次多</td></tr>
+            <tr><td><strong>8:50</strong></td><td>到达六甲缆车下站，购票候车</td><td>缆车每20-30分钟一班</td></tr>
+            <tr><td><strong>9:00</strong></td><td>乘六甲登山缆车上山</td><td>约10分钟，往返¥1,050</td></tr>
+            <tr><td><strong>9:10</strong></td><td>到达六甲山上站，等待山上巴士</td><td><strong>山上巴士约每小时1-2班，需预留等待时间</strong></td></tr>
+            <tr><td><strong>9:30</strong></td><td>乘山上巴士（2系统）前往牧场</td><td>约12分钟到牧场</td></tr>
+            <tr><td><strong>9:42</strong></td><td><strong>抵达六甲山牧场</strong>，开始游玩</td><td>门票：大人¥600，<strong>3岁免费</strong></td></tr>
+            <tr><td><strong>13:30</strong></td><td><strong>⭐ 绵羊赛跑</strong>（牧场名物）</td><td>13:00发投票券 / 13:30开跑，提前占位</td></tr>
+            <tr><td><strong>14:00</strong></td><td>从牧场出发前往有马温泉</td><td>山上巴士+六甲有马缆车，约45分钟</td></tr>
+            <tr><td><strong>14:45</strong></td><td><strong>抵达有马温泉</strong></td><td>开始下午行程</td></tr>
+            <tr><td><strong>15:00-16:30</strong></td><td>有马鳟鱼池钓鱼 / 玩具博物馆</td><td>根据小朋友状态二选一或都去</td></tr>
+            <tr><td><strong>16:30-17:30</strong></td><td>温泉街散步 + 亲水公园 + <strong>免费足汤</strong></td><td>太閤の足湯，买现烤碳酸煎饼</td></tr>
+            <tr><td><strong>17:30-18:30</strong></td><td><strong>有马晚餐</strong></td><td>Kutsurogiya等餐厅</td></tr>
+            <tr><td><strong>18:30-19:30</strong></td><td>温泉街夜游，买伴手礼</td><td>悠闲逛逛</td></tr>
+            <tr><td><strong>19:30</strong></td><td>乘坐神姬巴士返回神户三宫</td><td>约40分钟，末班车约22:00+</td></tr>
+            <tr><td><strong>20:15</strong></td><td>返回神户大仓酒店</td><td>三宫站打车或接驳车</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">🐑 牧场内亲子路线（9:42-14:00）</h4>
+        <table>
+          <thead><tr><th>时间</th><th>活动</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td><strong>9:45-11:30</strong></td><td>南区域：羊群区 + <strong>牧羊犬表演</strong></td><td>周日限定！牧羊犬表演仅周六、周日和公共假期举行</td></tr>
+            <tr><td><strong>11:30-12:00</strong></td><td>北区域：牛、马、山羊区</td><td>从南到北有一段上坡路，推车会稍微费力</td></tr>
+            <tr><td><strong>12:00-13:00</strong></td><td>牧场内午餐</td><td>有餐厅，可吃到新鲜牛奶做的冰淇淋和简餐</td></tr>
+            <tr><td><strong>13:00-13:30</strong></td><td><strong>⭐ 绵羊赛跑（シープレース）</strong></td><td>13:00发投票券 / 13:25截止 / 13:30开跑。免费参与，猜中有奖品。提前去占位！</td></tr>
+            <tr><td><strong>13:30-14:00</strong></td><td>快速逛纪念品店 + 准备出发</td><td>—</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">🚠 六甲山 → 有马温泉 交通</h4>
+        <div class="callout info">
+          <strong>路线：</strong>六甲山牧场 → 山上巴士（1系统）→ 六甲有马缆车山顶站 → 六甲有马缆车 → 有马温泉站<br>
+          <strong>总耗时：</strong>约45分钟 · <strong>费用：</strong>约 ¥1,400（单程）
+        </div>
+        <table>
+          <thead><tr><th>路段</th><th>交通方式</th><th>时间</th><th>费用</th></tr></thead>
+          <tbody>
+            <tr><td>牧场 → 六甲有马缆车山顶站</td><td>六甲山上巴士（1系统）</td><td>约11分钟</td><td>¥370</td></tr>
+            <tr><td>山顶站 → 有马温泉站</td><td>六甲有马缆车</td><td>约12分钟</td><td>单程¥1,030 / 往返¥1,850</td></tr>
+          </tbody>
+        </table>
+        <div class="callout tip">
+          <strong>🎫 省钱套票：</strong>「六甲越有马片道きっぷ」（六甲越有马单程票），包含六甲缆车+山上巴士+六甲有马缆车的单程费用，成人 <strong>¥2,450</strong>，儿童 <strong>¥1,230</strong>，比分开买划算。
+        </div>
+        <div class="callout warn">
+          <strong>⏰ 末班车提醒：</strong>六甲有马缆车 <strong>末班约17:10</strong>（秋季），如果计划坐缆车回六甲山再下山，必须赶在17:10前。但<strong>你的方案是从有马直接坐巴士回三宫，不受此限制</strong>。
+        </div>
+        <div class="callout tip">
+          <strong>😴 小朋友睡觉提示：</strong>这段路约45分钟，缆车运行平稳，婴儿车可直接推上去。如果小朋友在牧场玩累了，正好可以在这段路上小睡一下，为下午有马的活动储备精力。
+        </div>
+
+        <h4 class="sub-heading">♨️ 有马免费足汤体验</h4>
+        <div class="callout tip">
+          <strong>太閤の足湯</strong>位于金之汤旁边，<strong>完全免费</strong>。带小朋友泡个脚，体验一下有马的名汤，大人也能顺便歇歇脚。<br>
+          <strong>💡 提醒：</strong>记得<strong>自带小毛巾</strong>，或者在旁边购买（约200日元）。
+        </div>
+
+        <h4 class="sub-heading">🎡 有马亲子玩法（3岁友好）</h4>
+
+        <div class="bf-grid">
+          <div class="bf-card">
+            <div class="name">🐟 有马鳟鱼池（有馬ます池）</div>
+            <div class="meta">强烈推荐 · 有马温泉街</div>
+            <div class="price">一竿 ¥1,600（含3条鱼+料理费）</div>
+            <div class="desc">
+              <strong>为什么适合3岁：</strong>店家提供简易竹竿和粘土状鱼饵（<strong>不碰虫子</strong>），<strong>保证能钓到3条鱼</strong>，钓不到会补足。钓上的虹鳟鱼可以<strong>免费加工成唐扬炸鸡块</strong>，小朋友吃到自己钓的鱼会很有成就感。
+            </div>
+            <span class="recommend">🎣 3岁强烈推荐</span>
+          </div>
+
+          <div class="bf-card">
+            <div class="name">🧸 有马玩具博物馆</div>
+            <div class="meta">室内好去处 · 金之汤旁</div>
+            <div class="price">3岁儿童 ¥500</div>
+            <div class="desc">
+              馆内收藏了<strong>约4000件木制玩具</strong>，5楼是专门的游玩空间，可以<strong>亲手触摸和体验</strong>。入馆当天可以<strong>自由进出</strong>，玩累了去吃饭再回来也可以。如果下雨或玩累了，这里是绝佳的室内选择。
+            </div>
+            <span class="recommend">🧸 雨天备选</span>
+          </div>
+
+          <div class="bf-card">
+            <div class="name">🚶 温泉街散步 + 亲水公园</div>
+            <div class="meta">免费 · 汤本坂沿线</div>
+            <div class="price">免费</div>
+            <div class="desc">
+              沿着汤本坂散步，可以买<strong>现烤的碳酸煎饼</strong>。途中的<strong>亲水公园</strong>有浅水区，小朋友可以在这里玩水、看落叶，轻松消磨时间。
+            </div>
+            <span class="recommend">💰 免费放电</span>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🍽 有马晚餐推荐（人均 ¥50-200）</h4>
+        <div class="bf-grid">
+          <div class="bf-card">
+            <div class="name">Kutsurogiya（くつろぎ家）</div>
+            <div class="meta">有马温泉街 · 和食</div>
+            <div class="price">¥1,500-3,000/人</div>
+            <div class="desc">氛围很好的和食餐厅，适合家庭。招牌是<strong>蒸笼牛肉</strong>和<strong>海鲜釜饭</strong>，店门口挂着“米其林指南”奖牌，服务亲切</div>
+            <span class="recommend">👶 亲子友好</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">Hacco restaurant enn by Wellbe</div>
+            <div class="meta">有马温泉街 · 洋食/咖啡</div>
+            <div class="price">¥1,100-2,500/人</div>
+            <div class="desc">明确提供<strong>儿童菜单</strong>，备有<strong>儿童餐具和儿童座椅</strong>，对带小朋友的家庭非常友好</div>
+            <span class="recommend">👶 儿童菜单</span>
+          </div>
+          <div class="bf-card backup">
+            <div class="name">有馬焼肉 丞</div>
+            <div class="meta">有马温泉街 · 烧肉</div>
+            <div class="price">¥2,000-4,000/人</div>
+            <div class="desc">如果家人喜欢烧肉，这家店<strong>欢迎儿童</strong>，可以品尝到高品质的牛肉</div>
+            <span class="recommend">🥩 烧肉</span>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🚌 有马温泉 → 神户三宫 返程（不经过六甲山）</h4>
+        <div class="callout tip">
+          <strong>✅ 最推荐：神姬巴士（直达，不换乘）</strong><br>
+          从有马温泉（太閤橋巴士站）坐<strong>神姬巴士</strong>，可以<strong>直达三宫</strong>，中途不用换乘。带小朋友和婴儿车最省心。
+        </div>
+        <table>
+          <thead><tr><th>方式</th><th>路线</th><th>时间</th><th>费用</th><th>末班车</th></tr></thead>
+          <tbody>
+            <tr><td><strong>神姬巴士（推荐）</strong></td><td>有马温泉（太閤橋）→ 神户三宫</td><td>约35-40分钟</td><td>¥600-780</td><td><strong>约 22:00 左右</strong></td></tr>
+            <tr><td>神户电铁</td><td>有马温泉 → 有马口 → 谷上 → 三宫</td><td>约36-57分钟</td><td>¥720</td><td>约 23:00 之后</td></tr>
+          </tbody>
+        </table>
+        <div class="callout info">
+          <strong>💡 建议：</strong>有马晚餐吃完（约18:30-19:00），在温泉街逛逛，19:30左右坐巴士回三宫，约20:15到达。时间非常充裕。
+        </div>
+
+        <h4 class="sub-heading">📸 六甲山 + 有马温泉 · Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">六甲山牧场</div>
+            <div class="place-desc">六甲山牧場 · 约150头绵羊自由放牧，可喂食、骑小马</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=六甲山牧場" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">六甲有马缆车</div>
+            <div class="place-desc">六甲有馬ロープウェイ · 翻越山脊连接六甲山与有马温泉</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=六甲有馬ロープウェイ" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">有马温泉</div>
+            <div class="place-desc">有馬温泉 · 日本三古泉之一，金泉与银泉闻名</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=有馬温泉" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">有马鳟鱼池</div>
+            <div class="place-desc">有馬ます池 · 钓鱼体验，钓到可现场炸成唐扬</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=有馬ます池" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">有马玩具博物馆</div>
+            <div class="place-desc">有馬玩具博物館 · 约4000件木制玩具，可亲手体验</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=有馬玩具博物館" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">Kutsurogiya</div>
+            <div class="place-desc">くつろぎ家 · 蒸笼牛肉与海鲜釜饭</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=くつろぎ家+有馬温泉" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <div class="callout warn">
+          <strong>⚠️ 重要提醒：</strong>六甲山牧场<strong>周二休园</strong>（10.4周日正常）。周日有<strong>牧羊犬表演</strong>，仅周末和节假日举行。山上气温比市区低，10月初早晚可能只有10-15°C，给小朋友带好外套。<strong>绵羊赛跑13:30开跑，13:00开始发投票券，建议提前去占位。</strong>
+        </div>
+
+        <h4 class="sub-heading">🎪 六甲山牧场体验项目预约情况</h4>
+        <table>
+          <thead><tr><th>体验项目</th><th>是否需要预约</th><th>费用</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>喂食动物</td><td>❌ 无需预约</td><td>饼干约¥100-200</td><td>先到先得，体验教室窗口按顺序受理</td></tr>
+            <tr><td>骑小马（牵绳）</td><td>❌ 无需预约</td><td>约¥500-1,000</td><td>3岁可骑，需家长陪同</td></tr>
+            <tr><td>绵羊赛跑</td><td>❌ 无需预约</td><td>免费</td><td>13:30开跑，提前占位</td></tr>
+            <tr><td>手工体验（冰淇淋制作等）</td><td>⚠️ 部分需当天预约</td><td>约¥1,000</td><td>15分钟前预约即可，具体以现场为准</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">🔄 备选游玩（如天气不佳或体力不足）</h4>
+        <table>
+          <thead><tr><th>选项</th><th>类型</th><th>3岁适合度</th><th>费用</th><th>交通</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td><strong>神户市立青少年科学馆</strong></td><td>室内科学馆</td><td>★★★★★</td><td>成人¥400，学龄前免费</td><td>Port Liner至南公园站步行3分钟</td><td>2026年3月全新翻修幼儿科学公园，周三休馆</td></tr>
+            <tr><td><strong>átoa 水族馆</strong></td><td>室内艺术水族馆</td><td>★★★★★</td><td>成人¥2,600，3岁幼儿¥500</td><td>三宫站步行约15分钟</td><td>沉浸式光影体验，有亲子休息区和哺乳室，雨天备选</td></tr>
+          </tbody>
+        </table>
+
+        <div class="map-box">
+          <strong>🗺 地图导航：</strong>依次搜索 <code>神户大仓酒店</code> → <code>六甲站</code> → <code>六甲缆车下站</code> → <code>六甲山牧场</code> → <code>六甲有马缆车</code> → <code>有马温泉</code> → <code>有马温泉（太閤橋）巴士站</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 10.5 ==================== -->
+<div class="tab-content" id="tab-1005">
+  <div class="section">
+    <div class="section-title"><span class="icon">🚃</span> 10.5（周一）神户 → 大阪梅田</div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <span class="date">10.5 周一</span>
+        <span class="badge">移动日</span>
+        <span class="hotel">🏨 大阪梅田格兰比亚酒店（Hotel Granvia Osaka）</span>
+      </div>
+      <div class="day-body">
+        <h4 class="sub-heading">🚃 神户三宫 → 大阪梅田 交通选择</h4>
+        <table>
+          <thead><tr><th>方式</th><th>到达站</th><th>时间</th><th>费用</th><th>特点</th><th>预约</th></tr></thead>
+          <tbody>
+            <tr><td><strong>JR新快速</strong></td><td>大阪站</td><td>约21分钟</td><td>¥420</td><td>最快，班次密，可能拥挤</td><td>❌ 无需</td></tr>
+            <tr><td><strong>阪急电铁</strong></td><td>大阪梅田</td><td>约28分钟</td><td>¥330</td><td>性价比高，梅田直达</td><td>❌ 无需</td></tr>
+            <tr><td><strong>阪神电铁</strong></td><td>大阪梅田</td><td>约31分钟</td><td>¥330</td><td>可直达难波</td><td>❌ 无需</td></tr>
+          </tbody>
+        </table>
+        <div class="callout tip">
+          <strong>👶 推荐：</strong>带3岁小朋友+行李，推荐<strong>阪急电铁</strong>（¥330，约28分钟），梅田站下车后步行至酒店。<br>
+          <strong>🏨 大阪梅田格兰比亚酒店：</strong>就在JR大阪站内，出站即到，带行李最方便。
+        </div>
+
+        <h4 class="sub-heading">🛍️ 梅田购物指南</h4>
+        <table>
+          <thead><tr><th>商场</th><th>核心定位与品牌</th><th>退税政策</th><th>优惠与特色</th></tr></thead>
+          <tbody>
+            <tr><td><strong>阪急百货</strong></td><td>高端全面，奢侈品、化妆品、服饰齐全</td><td>退税柜台在B1层</td><td><strong>5%游客优惠券</strong>（7天有效）；Patagonia在8F</td></tr>
+            <tr><td><strong>Grand Front Osaka</strong></td><td>潮流与户外，<strong>MUJI旗舰店</strong>、户外品牌集中</td><td>3F设有免税柜台（北馆）</td><td>凭护照可领<strong>500日元优惠券</strong>（满3000可用）</td></tr>
+            <tr><td><strong>LUCUA / LUCUA 1100</strong></td><td>年轻时尚，<strong>Lululemon日本最大店</strong>、<strong>北面</strong>、<strong>Keen</strong></td><td>各店铺内退税</td><td>Montbell货品齐全但<strong>不免税</strong>；Keen部分7折</td></tr>
+            <tr><td><strong>大丸百货</strong></td><td>经典精致，<strong>Theory</strong>等品牌</td><td>退税柜台统一办理</td><td><strong>5%折扣券</strong>（满3000可用）；退税满10万送2000美食券</td></tr>
+            <tr><td><strong>阪神百货</strong></td><td>综合便利，<strong>北面/HELLY HANSEN</strong>、<strong>MUJI</strong></td><td>退税收<strong>1.55%手续费</strong></td><td>同样提供<strong>5%游客优惠券</strong></td></tr>
+            <tr><td><strong>友都八喜</strong></td><td>电器与综合，电子产品、户外用品、扭蛋</td><td>可当场退税</td><td>⚠️ 可能只接受现金或刷卡</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">📍 关注品牌位置</h4>
+        <table>
+          <thead><tr><th>品牌</th><th>梅田位置</th></tr></thead>
+          <tbody>
+            <tr><td><strong>优衣库</strong></td><td>LINKS UMEDA 内，西日本最大全球旗舰店，2层，有儿童/婴儿区</td></tr>
+            <tr><td><strong>MUJI</strong></td><td>Grand Front Osaka 大型店；阪神梅田本店7F；阪急三番街南馆1F</td></tr>
+            <tr><td><strong>Theory</strong></td><td>大丸梅田店6F；LUCUA 1100 4F</td></tr>
+            <tr><td><strong>Lululemon</strong></td><td>LUCUA大阪店2F，日本最大面积旗舰店</td></tr>
+            <tr><td><strong>The North Face</strong></td><td>阪神梅田本店6F；LUCUA 1100 8F（男装店）</td></tr>
+            <tr><td><strong>其他户外</strong></td><td>Grand Front Osaka：北馆5F好日山庄（可免税），南馆5F Montbell（可免税）/Columbia，南馆4F始祖鸟/猛犸象</td></tr>
+          </tbody>
+        </table>
+
+        <div class="callout info">
+          <strong>💡 退税规则：</strong>同店同日消费满<strong>5,000日元（未税）</strong>可退税。消耗品和一般物品金额<strong>分开计算</strong>。梅田多数商场<strong>20:00-21:00关门</strong>，LUCUA约20:30，友都八喜约22:00。
+        </div>
+
+        <h4 class="sub-heading">🍽 梅田晚餐推荐（人均 ¥50-200）</h4>
+        <div class="bf-grid">
+          <div class="bf-card">
+            <div class="name">松屋 / 松乃家</div>
+            <div class="meta">梅田多处 · 24小时</div>
+            <div class="price">¥500-800/人</div>
+            <div class="desc">猪排定食¥550起，亲子丼、乌冬面等，快速实惠</div>
+            <span class="recommend">💰 超值</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">びっくりドンキー</div>
+            <div class="meta">梅田区域</div>
+            <div class="price">¥800-1,500/人</div>
+            <div class="desc">汉堡排家庭餐厅，有儿童菜单，环境宽敞</div>
+            <span class="recommend">👶 亲子友好</span>
+          </div>
+          <div class="bf-card backup">
+            <div class="name">バケット LINKS UMEDA</div>
+            <div class="meta">LINKS UMEDA · 梅田站直连</div>
+            <div class="price">¥1,000-1,500/人</div>
+            <div class="desc">面包食べ放題，12岁以下有专用面包台，3岁以下面包和饮料免费</div>
+            <span class="recommend">🍞 面包放题</span>
+          </div>
+          <div class="bf-card backup">
+            <div class="name">昔洋食 みつけ亭</div>
+            <div class="meta">阪急三番街 · 梅田站步行1分钟</div>
+            <div class="price">¥1,000-1,800/人</div>
+            <div class="desc">蛋包饭+汉堡排，小朋友喜欢的洋食，有儿童椅</div>
+            <span class="recommend">🍳 蛋包饭</span>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">📍 梅田购物 · Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">大阪梅田格兰比亚酒店</div>
+            <div class="place-desc">ホテルグランヴィア大阪 · JR大阪站直连</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=ホテルグランヴィア大阪" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">阪急百货 梅田本店</div>
+            <div class="place-desc">阪急百貨店 うめだ本店 · B1退税，5%游客优惠券</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=阪急百貨店+うめだ本店" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">Grand Front Osaka</div>
+            <div class="place-desc">グランフロント大阪 · MUJI旗舰店、户外品牌集中</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=グランフロント大阪" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">LUCUA / LUCUA 1100</div>
+            <div class="place-desc">ルクア · Lululemon日本最大店、北面</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=ルクア+大阪" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">LINKS UMEDA</div>
+            <div class="place-desc">リンクス梅田 · 优衣库西日本最大旗舰店</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=リンクス梅田" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🔄 备选游玩（大阪梅田 · 室内）</h4>
+        <table>
+          <thead><tr><th>选项</th><th>类型</th><th>3岁适合度</th><th>费用</th><th>位置</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td><strong>スキッズガーデン LINKS UMEDA店</strong></td><td>室内儿童游乐场</td><td>★★★★★</td><td>按时间收费</td><td>LINKS UMEDA 5F（梅田站直连）</td><td>3岁以上可独自入场，有专业看护人员。家长可自由购物</td></tr>
+            <tr><td><strong>モーリーファンタジー LINKS UMEDA店</strong></td><td>室内游乐场</td><td>★★★★★</td><td>按项目收费</td><td>LINKS UMEDA 5F</td><td>与スキッズガーデン同区域，游乐设施丰富</td></tr>
+            <tr><td><strong>Studio Cafe ZooAdventure</strong></td><td>亲子咖啡厅</td><td>★★★★☆</td><td>餐饮消费</td><td>LUCUA イーレ 6F</td><td>可一边用餐一边让小朋友在游乐区玩耍</td></tr>
+          </tbody>
+        </table>
+
+        <div class="map-box">
+          <strong>🗺 地图导航：</strong>搜索 <code>大阪梅田站</code> → <code>阪急百货</code> → <code>Grand Front Osaka</code> → <code>LUCUA</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 10.6 奈良+生驹山 ==================== -->
+<div class="tab-content" id="tab-1006">
+  <div class="section">
+    <div class="section-title"><span class="icon">🦌</span> 10.6（周二）奈良公园 + 东大寺 + 若草山 + 生驹山上游乐园</div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <span class="date">10.6 周二</span>
+        <span class="badge orange">奈良深度游</span>
+        <span class="badge purple">生驹山上游乐园</span>
+        <span class="hotel">🏨 大阪梅田格兰比亚酒店（Hotel Granvia Osaka）</span>
+      </div>
+      <div class="day-body">
+
+        <div class="callout accent">
+          <strong>🎯 路线核心思路：</strong>上午奈良公园喂鹿 + 东大寺 → 下午若草山看全景 → 傍晚转战生驹山上游乐园（近铁奈良线顺路，约20分钟）→ 晚上回大阪梅田。生驹山与奈良公园安排在同一天超顺路。
+        </div>
+
+        <h4 class="sub-heading">🚃 大阪梅田 → 奈良 交通</h4>
+        <table>
+          <thead><tr><th>方式</th><th>出发站</th><th>时间</th><th>费用</th><th>备注</th></tr></thead>
+          <tbody>
+            <tr><td><strong>近铁奈良线</strong></td><td>大阪难波站</td><td>约35分钟</td><td>¥840</td><td>快速急行直达近铁奈良站，离奈良公园最近</td></tr>
+          </tbody>
+        </table>
+        <div class="callout tip">
+          <strong>👶 推荐：</strong>从大阪梅田格兰比亚酒店出发（JR大阪站直连），先乘地铁到难波站，换乘近铁奈良线快速急行，约35分钟直达近铁奈良站。建议<strong>8:00前出发</strong>，9:00前到达奈良公园，避开人潮。
+        </div>
+
+        <h4 class="sub-heading">⏰ 一日游详细时间轴</h4>
+        <table>
+          <thead><tr><th>时间</th><th>活动</th><th>备注</th></tr></thead>
+          <tbody>
+            <tr><td><strong>8:00</strong></td><td>大阪梅田出发，前往难波站换乘近铁</td><td>地铁约10分钟</td></tr>
+            <tr><td><strong>8:20</strong></td><td>难波站 → 近铁奈良站（快速急行）</td><td>约35分钟，¥840</td></tr>
+            <tr><td><strong>9:00</strong></td><td><strong>抵达奈良公园</strong>，开始喂鹿</td><td>鹿仙贝¥200/把</td></tr>
+            <tr><td><strong>10:00-11:30</strong></td><td><strong>东大寺</strong>参观大佛殿</td><td>4-10月 7:30-17:30 · 大人¥800 · 3岁免费</td></tr>
+            <tr><td><strong>11:30-12:30</strong></td><td>奈良公园周边午餐</td><td>推荐柿叶寿司、釜饭</td></tr>
+            <tr><td><strong>12:30-14:00</strong></td><td><strong>若草山</strong>登山 + 山顶展望</td><td>门票¥150 · 17:00前入园 · 登山约30-40分钟</td></tr>
+            <tr><td><strong>14:00-14:30</strong></td><td>从近铁奈良站前往生驹站</td><td>近铁约20分钟，¥260</td></tr>
+            <tr><td><strong>14:30-15:00</strong></td><td>生驹站 → 鸟居前站 → 换乘猫狗缆车 → 生驹山上站</td><td>缆车约16分钟，单程大人¥500，儿童¥250</td></tr>
+            <tr><td><strong>15:00-18:00</strong></td><td><strong>生驹山上游乐园</strong>游玩</td><td>入园免费，项目单次¥300-600</td></tr>
+            <tr><td><strong>18:00-18:30</strong></td><td>山顶看日落/夜景</td><td>标高642米，360度全景</td></tr>
+            <tr><td><strong>18:30-19:30</strong></td><td>生驹山 → 大阪梅田</td><td>近铁约30分钟</td></tr>
+            <tr><td><strong>19:30</strong></td><td>返回大阪梅田格兰比亚酒店，晚餐</td><td>梅田美食街</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">🦌 奈良公园 + 东大寺（9:00-11:30）</h4>
+        <table>
+          <thead><tr><th>项目</th><th>详情</th></tr></thead>
+          <tbody>
+            <tr><td>奈良公园</td><td>超过1200头自由漫步的梅花鹿，鹿仙贝¥200/把。鹿是野生动物，喂食时大人务必在小朋友身边</td></tr>
+            <tr><td>东大寺大佛殿</td><td>4-10月 7:30-17:30，大人¥800，3岁免费。殿内柱子底部有“柱洞”，传说钻过去能带来好运，3岁小朋友钻过去很轻松</td></tr>
+            <tr><td>3岁适合度</td><td>★★★★★ 喂鹿和钻柱洞都是3岁小朋友会非常兴奋的体验</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">🌄 若草山（12:30-14:00）</h4>
+        <table>
+          <thead><tr><th>项目</th><th>详情</th></tr></thead>
+          <tbody>
+            <tr><td>门票</td><td>¥150，<strong>17:00前截止入园</strong></td></tr>
+            <tr><td>登山时间</td><td>从山脚到山顶约<strong>30-40分钟</strong>，带3岁小朋友建议预留充足时间</td></tr>
+            <tr><td>亮点</td><td>山顶可俯瞰奈良市区和东大寺全景，是奈良最佳的免费景观之一</td></tr>
+            <tr><td>3岁适合度</td><td>★★★★☆ 山坡平缓，但徒步上山对3岁小朋友有点累，建议抱或背</td></tr>
+            <tr><td>⚠️ 提醒</td><td>若草山17:00关门，10月日落约17:30。如果想在山顶看日落，需<strong>17:00前入园后留在山上</strong></td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">🎡 生驹山上游乐园（15:00-18:00）</h4>
+
+        <div class="callout info">
+          <strong>📍 基本信息</strong><br>
+          · <strong>地址：</strong>奈良县生驹市寺之内町1160<br>
+          · <strong>营业时间：</strong>10:00-17:00（暑期限定延长）· <strong>每周四休</strong>（节假日除外）· <strong>12月初至3月中旬冬季休园</strong><br>
+          · <strong>10.6是周二，正常开放</strong><br>
+          · <strong>入园：</strong>免费 · 项目单次¥300-600
+        </div>
+
+        <div class="callout accent">
+          <strong>🎠 为什么3岁小朋友会很喜欢？</strong><br>
+          · <strong>3岁可玩项目多</strong>：全园23个项目中，<strong>3岁在家长陪同下可以玩18个</strong>，选择非常丰富<br>
+          · <strong>无刺激项目</strong>：所有设施都温和友善，没有过山车等刺激项目，适合幼儿<br>
+          · <strong>排队少</strong>：相比USJ等大型乐园，这里人少、几乎不用排队，可以反复玩喜欢的项目<br>
+          · <strong>缆车本身就是景点</strong>：上山乘坐的是<strong>日本最古老的猫狗造型缆车</strong>，车厢有猫咪和狗狗造型，小朋友会非常兴奋
+        </div>
+
+        <h4 class="sub-heading">🎢 3岁可玩重点项目</h4>
+        <table>
+          <thead><tr><th>项目名称</th><th>价格</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td><strong>ぷかぷかパンダ（飘飘熊猫）</strong></td><td>¥500</td><td><strong>0岁起可乘坐</strong>（需陪同），熊猫造型的空中缆车，可俯瞰整个园区和奈良、大阪全景</td></tr>
+            <tr><td><strong>サイクルモノレール（空中脚踏车）</strong></td><td>¥600</td><td><strong>3岁起</strong>（需陪同），在空中骑行，一边踩踏板一边欣赏绝景，非常热门</td></tr>
+            <tr><td><strong>ミニパイレーツシップ（迷你海盗船）</strong></td><td>¥300</td><td><strong>3岁起</strong>（需陪同），小小的刺激和冒险，适合初次体验海盗船的小朋友</td></tr>
+            <tr><td><strong>飛行塔（飞行塔）</strong></td><td>¥600</td><td><strong>0岁起</strong>（需陪同），1929年开园至今仍在运行的日本最古老大型游乐设施，升到20米高空看360度全景</td></tr>
+            <tr><td><strong>SL列車</strong></td><td>¥300</td><td><strong>0岁起</strong>，复古蒸汽小火车，出站后右侧就是生驹山“一等三角点”，小朋友会很好奇</td></tr>
+            <tr><td><strong>メリーゴーランド（旋转木马）</strong></td><td>¥400</td><td>经典项目，3岁可骑小马</td></tr>
+            <tr><td><strong>アニマルティーカップ（动物茶杯）</strong></td><td>¥300</td><td>动物造型旋转茶杯，3岁可玩</td></tr>
+            <tr><td><strong>ハッピーカンガルー（快乐袋鼠）</strong></td><td>¥300</td><td>袋鼠造型的小型升降项目，3岁可玩</td></tr>
+          </tbody>
+        </table>
+
+        <div class="callout tip">
+          <strong>🎫 省钱建议：</strong><br>
+          · 如果计划玩多个项目，<strong>幼児フリーパス（2岁-未就学，约¥2,500）</strong>最划算，无限次畅玩所有项目<br>
+          · 大人可以买<strong>12次券（¥3,500）</strong>，按需使用，不用买通票<br>
+          · 也可以单次购买，项目单次¥300-600，按需选择
+        </div>
+
+        <h4 class="sub-heading">🚡 交通：怎么去生驹山上游乐园</h4>
+        <div class="callout info">
+          <strong>路线：</strong>近铁奈良站 → 近铁生驹站（约20分钟，¥260）→ 步行约3分钟至鸟居前站 → 换乘生驹缆车 → 宝山寺站换乘 → 生驹山上站（约16分钟，单程大人¥500，儿童¥250）→ 步行即到游乐园
+        </div>
+        <div class="callout tip">
+          <strong>😴 小朋友休息提示：</strong>从奈良到生驹山约20分钟近铁 + 16分钟缆车。缆车是可爱的猫狗造型，小朋友会很兴奋。如果之前在若草山玩累了，这段路可以在推车里小睡。
+        </div>
+
+        <h4 class="sub-heading">📸 奈良 + 生驹山 · Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">奈良公园</div>
+            <div class="place-desc">奈良公園 · 超过1200头梅花鹿自由漫步</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=奈良公園" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">东大寺</div>
+            <div class="place-desc">東大寺 · 世界最大木造建筑，大佛殿</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=東大寺" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">若草山</div>
+            <div class="place-desc">若草山 · 奈良最佳全景展望台，17:00前入园</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=若草山" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">生驹山上游乐园</div>
+            <div class="place-desc">生駒山上遊園地 · 标高642米的山顶复古游乐园</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=生駒山上遊園地" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">生驹缆车 鸟居前站</div>
+            <div class="place-desc">生駒ケーブル 鳥居前駅 · 猫狗造型缆车起点</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=生駒ケーブル+鳥居前駅" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">生驹站</div>
+            <div class="place-desc">近鉄生駒駅 · 近铁奈良线与缆车换乘点</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=近鉄生駒駅" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <div class="callout warn">
+          <strong>⚠️ 重要提醒：</strong><br>
+          · 若草山<strong>17:00关门</strong>，如果下午还要去生驹山，建议<strong>14:00前下山</strong><br>
+          · 生驹山上游乐园<strong>每周四休</strong>（10.6周二正常）· <strong>12月至3月中旬冬季休园</strong><br>
+          · 山顶温度比山下低<strong>3-5℃</strong>，给小朋友带好外套<br>
+          · 喂鹿时注意安全，鹿兴奋时可能会追着要食物
+        </div>
+
+        <h4 class="sub-heading">🍽 奈良午餐推荐（人均 ¥50-200）</h4>
+        <div class="bf-grid">
+          <div class="bf-card">
+            <div class="name">奈良公园周边餐厅</div>
+            <div class="meta">近铁奈良站步行10-15分钟</div>
+            <div class="price">¥1,000-2,000/人</div>
+            <div class="desc">柿叶寿司、釜饭、乌冬面等奈良特色，多家餐厅可选，适合家庭</div>
+            <span class="recommend">✅ 选择丰富</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">东大寺门前食堂</div>
+            <div class="meta">东大寺参道沿线</div>
+            <div class="price">¥800-1,500/人</div>
+            <div class="desc">靠近东大寺，方便参观后直接用餐，有儿童座椅</div>
+            <span class="recommend">👶 就近方便</span>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🔄 备选游玩（如天气不佳或体力不足）</h4>
+        <table>
+          <thead><tr><th>选项</th><th>类型</th><th>3岁适合度</th><th>费用</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td><strong>奈良町</strong></td><td>老街散步</td><td>★★★★☆</td><td>免费</td><td>从近铁奈良站步行约10分钟，有传统町屋、杂货店和咖啡馆，适合悠闲逛</td></tr>
+            <tr><td><strong>春日大社</strong></td><td>世界遗产</td><td>★★★★☆</td><td>大人¥500</td><td>从奈良公园步行约15分钟，万灯笼很有特色，但台阶较多，推车不便</td></tr>
+          </tbody>
+        </table>
+
+        <div class="map-box">
+          <strong>🗺 地图导航：</strong>依次搜索 <code>大阪梅田站</code> → <code>近铁奈良站</code> → <code>奈良公园</code> → <code>东大寺</code> → <code>若草山</code> → <code>近铁生驹站</code> → <code>生駒ケーブル鳥居前駅</code> → <code>生駒山上遊園地</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 10.7 ==================== -->
+<div class="tab-content" id="tab-1007">
+  <div class="section">
+    <div class="section-title"><span class="icon">🚃</span> 10.7（周三）大阪梅田 → 京都</div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <span class="date">10.7 周三</span>
+        <span class="badge">移动日</span>
+        <span class="hotel">🏨 京都梅小路酒店</span>
+      </div>
+      <div class="day-body">
+        <h4 class="sub-heading">🚃 大阪梅田 → 京都 交通选择</h4>
+        <table>
+          <thead><tr><th>方式</th><th>出发站</th><th>时间</th><th>费用</th><th>特点</th><th>预约</th></tr></thead>
+          <tbody>
+            <tr><td><strong>JR新快速</strong></td><td>大阪站</td><td>约28分钟</td><td>¥580</td><td>最快，直达京都站</td><td>❌ 无需</td></tr>
+            <tr><td><strong>阪急电铁</strong></td><td>大阪梅田</td><td>约43分钟</td><td>¥400</td><td>到河原町，适合去四条</td><td>❌ 无需</td></tr>
+            <tr><td><strong>京阪电铁</strong></td><td>淀屋桥</td><td>约50分钟</td><td>¥420</td><td>到祇园四条、出町柳</td><td>❌ 无需</td></tr>
+          </tbody>
+        </table>
+        <div class="callout tip">
+          <strong>👶 推荐：</strong>住梅田选<strong>JR新快速</strong>（¥580，28分钟），到京都站后换乘JR嵯峨野线到梅小路京都西站。<br>
+          <strong>🏨 京都梅小路酒店：</strong>就在梅小路公园旁，离京都铁道博物馆步行可达，位置非常适合你们的行程。
+        </div>
+
+        <h4 class="sub-heading">🌳 下午：梅小路公园</h4>
+        <div class="info-row">
+          <div class="info-item"><span class="label">🎫 门票</span>免费入园</div>
+          <div class="info-item"><span class="label">🎡 设施</span>14米滚轮溜滑梯、巨型攀爬架、小电车</div>
+          <div class="info-item"><span class="label">👶 适合度</span>★★★★★ 免费放电好去处</div>
+        </div>
+
+        <h4 class="sub-heading">🍽 京都早餐推荐（梅小路周边）</h4>
+        <div class="bf-grid">
+          <div class="bf-card">
+            <div class="name">Nakau（なか卯）</div>
+            <div class="meta">京都站八条口 · 多家分店</div>
+            <div class="price">¥420-490/人（约¥21-25）</div>
+            <div class="desc">目玉蛋培根定食¥420，亲子丼+乌冬套餐¥500，快速实惠</div>
+            <span class="recommend">💰 最便宜</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">高木咖啡 高辻本店</div>
+            <div class="meta">京都高辻 · 50年老字号</div>
+            <div class="price">¥700-900/人（约¥35-45）</div>
+            <div class="desc">A套餐¥900，B套餐¥800，C套餐¥700，厚片吐司+水煮蛋/炒蛋</div>
+            <span class="recommend">☕ 老字号</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">Cafe Green</div>
+            <div class="meta">京都 · 有宽敞包间</div>
+            <div class="price">¥500-1,000/人（约¥25-50）</div>
+            <div class="desc">儿童午餐全部¥500，蛋包饭/肉酱意面，有宽敞个室适合带娃</div>
+            <span class="recommend">👶 儿童菜单</span>
+          </div>
+          <div class="bf-card backup">
+            <div class="name">KINDER CAFE</div>
+            <div class="meta">京都市北区 · 大德寺前步行3分钟</div>
+            <div class="price">¥800-1,200/人</div>
+            <div class="desc">有儿童游乐区和绘本，适合带小朋友悠闲用餐，需乘巴士前往</div>
+            <span class="recommend">📚 绘本+游乐区</span>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🍽 京都晚餐推荐（梅小路周边）</h4>
+        <div class="bf-grid">
+          <div class="bf-card backup">
+            <div class="name">Royal Host 京都高岛屋店</div>
+            <div class="meta">京都高岛屋 · 京都站直连</div>
+            <div class="price">¥1,000-1,800/人</div>
+            <div class="desc">家庭餐厅，儿童菜单丰富，3岁以下饮料吧免费</div>
+            <span class="recommend">👶 家庭餐厅</span>
+          </div>
+          <div class="bf-card backup">
+            <div class="name">和みダイニング D-Light</div>
+            <div class="meta">京都站八条口区域</div>
+            <div class="price">¥800-1,500/人</div>
+            <div class="desc">儿童菜单¥380起，有儿童椅和餐具，氛围温馨</div>
+            <span class="recommend">💰 实惠</span>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">📍 京都亲子景点 · Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">京都梅小路酒店</div>
+            <div class="place-desc">梅小路公园旁 · 近京都铁道博物馆</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=京都梅小路+ホテル" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">梅小路公园</div>
+            <div class="place-desc">梅小路公園 · 免费入园，14米滚轮溜滑梯</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=梅小路公園" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">京都水族馆</div>
+            <div class="place-desc">京都水族館 · 海豚表演、企鹅、大鲵</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=京都水族館" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">teamLab Biovortex 京都</div>
+            <div class="place-desc">チームラボ バイオヴォルテックス 京都</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=チームラボ+バイオヴォルテックス+京都" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🔄 备选游玩（京都 · 室内/亲子）</h4>
+        <table>
+          <thead><tr><th>选项</th><th>类型</th><th>3岁适合度</th><th>费用</th><th>交通</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td><strong>京都水族馆</strong></td><td>室内水族馆</td><td>★★★★★</td><td>成人¥2,600，3岁以上¥900</td><td>京都站步行约15分钟（梅小路公园旁）</td><td>有海豚表演、企鹅、大鲵展览。馆内可带便当，有儿童菜单</td></tr>
+            <tr><td><strong>teamLab Biovortex 京都</strong></td><td>沉浸式数字艺术</td><td>★★★★★</td><td>成人¥3,400起，4-12岁¥1,800，3岁以下免费</td><td>京都站八条东口步行7分钟</td><td>国内最大teamLab，有婴儿室。建议预留2-3小时</td></tr>
+          </tbody>
+        </table>
+
+        <div class="map-box">
+          <strong>🗺 地图导航：</strong>搜索 <code>大阪梅田站</code> → <code>京都站</code> → <code>梅小路公园</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 10.8 ==================== -->
+<div class="tab-content" id="tab-1008">
+  <div class="section">
+    <div class="section-title"><span class="icon">🎋</span> 10.8（周四）京都岚山 · 竹林 + 渡月桥</div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <span class="date">10.8 周四</span>
+        <span class="badge green">自然漫步</span>
+        <span class="hotel">🏨 京都梅小路酒店</span>
+      </div>
+      <div class="day-body">
+        <div class="info-row">
+          <div class="info-item"><span class="label">📍 交通</span>京都站 → JR嵯峨野线 → 嵯峨岚山站（约15分钟）</div>
+          <div class="info-item"><span class="label">🎋 路线</span>竹林小径 → 天龍寺 → 渡月桥</div>
+          <div class="info-item"><span class="label">🎫 天龍寺</span>庭园成人¥500 · <strong>学龄前免费</strong></div>
+        </div>
+        <div class="callout tip">
+          <strong>💡 建议：</strong>早上9-10点出发，避开人潮。全程平路，推车友好。中午可在岚山商店街用餐（人均¥1,000-2,000）。
+        </div>
+
+        <h4 class="sub-heading">🍽 岚山午餐推荐</h4>
+        <div class="bf-grid">
+          <div class="bf-card">
+            <div class="name">岚山商店街</div>
+            <div class="meta">嵯峨岚山站步行5分钟</div>
+            <div class="price">¥1,000-2,000/人</div>
+            <div class="desc">多家餐厅和小吃店，有可丽饼、抹茶甜品、乌冬面等，适合家庭</div>
+            <span class="recommend">✅ 选择丰富</span>
+          </div>
+          <div class="bf-card backup">
+            <div class="name">轻松熊茶房（岚山）</div>
+            <div class="meta">岚山区域</div>
+            <div class="price">¥1,200-2,000/人</div>
+            <div class="desc">轻松熊主题餐点，牛肉咖喱饭、小白熊米饭，小朋友会很喜欢</div>
+            <span class="recommend">🧸 主题餐厅</span>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">📍 岚山 · Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">竹林小径</div>
+            <div class="place-desc">竹林の小径 · 岚山标志性景观</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=竹林の小径+嵐山" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">天龍寺</div>
+            <div class="place-desc">天龍寺 · 世界遗产，庭园学龄前免费</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=天龍寺+嵐山" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">渡月桥</div>
+            <div class="place-desc">渡月橋 · 岚山象征，桂川上的名桥</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=渡月橋" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">轻松熊茶房</div>
+            <div class="place-desc">りらっくま茶房 · 岚山主题餐厅</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=りらっくま茶房+嵐山" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🔄 备选游玩（岚山周边）</h4>
+        <table>
+          <thead><tr><th>选项</th><th>类型</th><th>3岁适合度</th><th>费用</th><th>位置</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td><strong>ジオラマ京都JAPAN</strong></td><td>铁道模型馆</td><td>★★★★☆</td><td>¥530，未就学免费</td><td>JR嵯峨岚山站旁</td><td>西日本最大级铁道模型，操纵体验¥200/次，可与岚山行程搭配</td></tr>
+            <tr><td><strong>东映太秦映画村</strong></td><td>主题乐园</td><td>★★★★☆</td><td>未满3岁免费，3岁以上需购票</td><td>岚电太秦广隆寺站步行5分钟</td><td>江户时代街景，有忍者秀和角色表演，适合亲子</td></tr>
+          </tbody>
+        </table>
+
+        <div class="map-box">
+          <strong>🗺 地图导航：</strong>搜索 <code>京都站</code> → <code>嵯峨岚山站</code> → <code>竹林小径</code> → <code>天龍寺</code> → <code>渡月桥</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 10.9 ==================== -->
+<div class="tab-content" id="tab-1009">
+  <div class="section">
+    <div class="section-title"><span class="icon">🚂</span> 10.9（周五）京都铁道博物馆 → 临空城</div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <span class="date">10.9 周五</span>
+        <span class="badge">移动+游玩</span>
+        <span class="hotel">🏨 临空奥德西斯套房酒店（Odysis Suites Osaka Airport Hotel）</span>
+      </div>
+      <div class="day-body">
+        <div class="info-row">
+          <div class="info-item"><span class="label">🚂 铁道博物馆</span>10:00-17:00 · <strong>周三休</strong> · 周五正常 · 大人¥1,500 · 3岁免费</div>
+          <div class="info-item"><span class="label">👶 适合度</span>★★★★★ 儿童驾驶体验、模拟器、真实列车</div>
+          <div class="info-item"><span class="label">📍 下午移动</span>京都站 → JR → 临空城站（约1.5小时）</div>
+        </div>
+        <div class="callout accent">
+          <strong>🎫 预约建议：</strong>京都铁道博物馆建议提前购买<strong>日时指定票</strong>（JRE MALL或官网）。
+        </div>
+        <div class="callout tip">
+          <strong>💡 推荐：</strong>上午铁道博物馆（2-3小时），中午在京都站午餐，下午乘JR前往临空城。到达后可逛临空城奥特莱斯、SEACLE室内儿童乐园。
+        </div>
+
+        <h4 class="sub-heading">📍 Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">京都铁道博物馆</div>
+            <div class="place-desc">京都鉄道博物館 · 儿童驾驶体验、模拟器</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=京都鉄道博物館" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">临空奥德西斯套房酒店</div>
+            <div class="place-desc">Odysis Suites Osaka Airport Hotel · 临空城站旁</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Odysis+Suites+Osaka+Airport+Hotel" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">临空城奥特莱斯</div>
+            <div class="place-desc">りんくうプレミアム・アウトレット · 临空城站旁</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=りんくうプレミアム・アウトレット" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <h4 class="sub-heading">🍽 临空城晚餐/购物</h4>
+        <div class="bf-grid">
+          <div class="bf-card">
+            <div class="name">临空城奥特莱斯美食广场</div>
+            <div class="meta">临空城站旁 · 10:00-20:00</div>
+            <div class="price">¥800-1,500/人</div>
+            <div class="desc">多家餐厅可选，适合到达后用餐</div>
+            <span class="recommend">✅ 选择丰富</span>
+          </div>
+          <div class="bf-card">
+            <div class="name">SEACLE室内儿童乐园</div>
+            <div class="meta">临空城站旁</div>
+            <div class="price">约¥600/小时</div>
+            <div class="desc">室内儿童乐园，适合小朋友放电，家长可轮流购物</div>
+            <span class="recommend">👶 儿童乐园</span>
+          </div>
+        </div>
+
+        <div class="map-box">
+          <strong>🗺 地图导航：</strong>搜索 <code>京都铁道博物馆</code> → <code>京都站</code> → <code>临空城站</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 10.10 ==================== -->
+<div class="tab-content" id="tab-1010">
+  <div class="section">
+    <div class="section-title"><span class="icon">✈️</span> 10.10（周六）临空城 → 关西机场 → 返程</div>
+    <div class="day-card">
+      <div class="day-header">
+        <span class="date">10.10 周六</span>
+        <span class="badge">返程</span>
+        <span class="hotel">🏨 退房 → 关西机场</span>
+      </div>
+      <div class="day-body">
+        <p>上午可在临空城最后购物，或去临空公园海边散步。下午前往关西机场，乘接驳巴士约10-15分钟（¥370）。</p>
+
+        <div class="callout tip">
+          <strong>💡 建议：</strong>如果下午航班，建议上午在临空城奥特莱斯最后补货，或去临空公园看海。提前 3 小时到机场办理登机手续。<br>
+          <strong>🏨 酒店送机：</strong>临空奥德西斯套房酒店提供免费送机接驳车，需入住时前台预约。时刻表：5:10、5:55、6:45、7:30、8:15、8:55（仅上午）。
+        </div>
+
+        <div class="map-box">
+          <strong>🗺 地图导航：</strong>搜索 <code>临空城站</code> → <code>关西机场</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 交通票券 ==================== -->
+<div class="tab-content" id="tab-transport">
+  <div class="section">
+    <div class="section-title"><span class="icon">🎫</span> 交通票券与预约标记</div>
+    <table>
+      <thead>
+        <tr><th>交通方式</th><th>是否需要预约</th><th>预约方式</th><th>备注</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>JR特急はしだて</strong>（京都→天桥立）</td><td><span class="tag red">✅ 必须预约</span></td><td>JR西日本「e5489」或「えきねっと」</td><td>全车指定席，无自由席，乘车日前1个月开放</td></tr>
+        <tr><td><strong>南海特急Rapi:t</strong>（关西机场↔难波）</td><td><span class="tag red">✅ 必须预约</span></td><td>南海电铁官网或Klook</td><td>全车指定席</td></tr>
+        <tr><td><strong>阪急PRiVACE</strong>（京都线指定席）</td><td><span class="tag yellow">⚠️ 可选</span></td><td>阪急官网预约</td><td>非强制，自由席也可乘坐</td></tr>
+        <tr><td><strong>天桥立↔伊根巴士</strong></td><td><span class="tag red">✅ 强烈建议预约</span></td><td>丹后海陆交通电话或网络</td><td>班次极少，当天可能无座</td></tr>
+        <tr><td><strong>伊根湾观光船</strong></td><td><span class="tag yellow">⚠️ 建议预约</span></td><td>丹后海陆交通</td><td>每小时2班（整点/30分），首班9:00末班16:00</td></tr>
+        <tr><td><strong>大阪海游馆</strong></td><td><span class="tag red">✅ 强烈建议提前买指定时间电子票</span></td><td>官网 / Klook / KKday</td><td>分时段入场，周末高峰票量有限；成人约 ¥2,700 起（动态定价）</td></tr>
+        <tr><td><strong>京都铁道博物馆</strong></td><td><span class="tag yellow">⚠️ 建议提前买日时指定票</span></td><td>JRE MALL或官网</td><td>—</td></tr>
+        <tr><td><strong>六甲缆车</strong></td><td><span class="tag green">❌ 不需要</span></td><td>现场购票</td><td>—</td></tr>
+        <tr><td><strong>六甲山上巴士</strong></td><td><span class="tag green">❌ 不需要</span></td><td>现场购票/IC卡</td><td>⚠️ 班次少（约1小时1-2班），需预留等车时间</td></tr>
+        <tr><td><strong>六甲有马缆车</strong></td><td><span class="tag green">❌ 不需要</span></td><td>现场购票</td><td>约每20分钟一班，末班约17:10（秋季）</td></tr>
+        <tr><td><strong>神姬巴士（有马→三宫）</strong></td><td><span class="tag green">❌ 不需要</span></td><td>现场上车/IC卡</td><td>直达不换乘，末班约22:00</td></tr>
+        <tr><td><strong>生驹缆车</strong></td><td><span class="tag green">❌ 不需要</span></td><td>现场购票</td><td>猫狗造型缆车，单程大人¥500，儿童¥250</td></tr>
+        <tr><td><strong>生驹山上游乐园</strong></td><td><span class="tag green">❌ 不需要</span></td><td>现场购票</td><td>入园免费，项目单次¥300-600，周四休</td></tr>
+      </tbody>
+    </table>
+
+    <h4 class="sub-heading">🎫 推荐票券</h4>
+    <table>
+      <thead><tr><th>票券</th><th>适用范围</th><th>价格</th><th>3岁儿童</th></tr></thead>
+      <tbody>
+        <tr><td><strong>关西周游卡</strong></td><td>大阪/京都/神户/奈良地铁+私铁（不含JR）</td><td>2日¥4,380 / 3日¥5,400</td><td>1成人可免费带2名0-5岁儿童</td></tr>
+        <tr><td><strong>JR关西地区铁路周游券</strong></td><td>JR线（含HARUKA）+部分私铁</td><td>1日¥2,400 / 2日¥4,600 / 3日¥5,600</td><td>1成人可免费带2名1-5岁儿童（不占座）</td></tr>
+        <tr><td><strong>近铁Rail Pass 1day</strong></td><td>奈良、大阪、京都区间1日无限乘坐</td><td>成人¥1,500 / 儿童¥750</td><td>适合10.6奈良+生驹山行程</td></tr>
+        <tr><td><strong>六甲摩耶休闲套票</strong></td><td>六甲山/摩耶山缆车+巴士+电车</td><td>阪急版¥2,500 / 阪神版¥2,350</td><td>—</td></tr>
+        <tr><td><strong>六甲越有马片道きっぷ</strong></td><td>六甲缆车+山上巴士+六甲有马缆车（单程）</td><td>成人¥2,450 / 儿童¥1,230</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== TAB: 备选方案 ==================== -->
+<div class="tab-content" id="tab-backup">
+  <div class="section">
+    <div class="section-title"><span class="icon">🔄</span> 备选方案：天桥立 + 伊根（视天气决定）</div>
+
+    <div class="day-card">
+      <div class="backup-header">🌊 海之京都 · 天桥立 + 伊根舟屋 2天1夜</div>
+      <div class="day-body">
+        <p style="margin-bottom:12px;"><strong>适用条件：</strong>天气晴朗、小朋友状态好、愿意多花一天在路上。建议替换掉10.7-10.8的京都行程，改为2天1夜深度游。</p>
+
+        <h4 class="sub-heading">🚌 交通方案对比（京都出发）</h4>
+        <table>
+          <thead><tr><th>方式</th><th>时间</th><th>费用</th><th>预约</th><th>特点</th></tr></thead>
+          <tbody>
+            <tr><td><strong>JR特急はしだて</strong></td><td>约2小时</td><td>¥4,750起</td><td><span class="tag red">必须预约</span></td><td>京都站直达天桥立，最方便，班次少</td></tr>
+            <tr><td><strong>高速巴士</strong></td><td>约2小时</td><td>¥3,400起</td><td><span class="tag yellow">建议预约</span></td><td>需提前预约，班次有限</td></tr>
+            <tr><td><strong>包车/一日团</strong></td><td>约2小时</td><td>¥8,000-15,000/人</td><td>需预约</td><td>中文司机，行程灵活，适合带娃</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="sub-heading">🗺 推荐2天1夜路线</h4>
+        <table>
+          <thead><tr><th>时间</th><th>活动</th><th>费用</th><th>亲子亮点</th></tr></thead>
+          <tbody>
+            <tr><td>Day 1 上午</td><td>京都 → 天桥立（JR/巴士）</td><td>¥3,400-4,750</td><td>—</td></tr>
+            <tr><td>Day 1 中午</td><td>天桥立View Land（飞龙观）</td><td>缆车往返¥850</td><td>单轨电车+吊椅，倒过来看沙洲</td></tr>
+            <tr><td>Day 1 下午</td><td>天桥立松林散步 + 观光船</td><td>¥1,200</td><td>喂海鸥</td></tr>
+            <tr><td>Day 1 晚</td><td>住天桥立站附近</td><td>¥10,000-20,000/晚</td><td>—</td></tr>
+            <tr><td>Day 2 上午</td><td>天桥立 → 伊根（巴士约1小时）</td><td>¥600</td><td>—</td></tr>
+            <tr><td>Day 2 中午</td><td>伊根湾观光船</td><td>大人¥1,200 / <strong>6岁以下免费</strong></td><td>船上喂海鸥，小朋友超兴奋</td></tr>
+            <tr><td>Day 2 下午</td><td>伊根舟屋步道散步 → 返回京都</td><td>¥3,400-4,750</td><td>—</td></tr>
+          </tbody>
+        </table>
+
+        <div class="callout accent">
+          <strong>🎫 推荐套票：</strong>「丹後天橋立伊根フリー乗車船券」（约¥3,000-4,000），含天桥立观光船+伊根湾游览船+缆车+当地巴士。
+        </div>
+
+        <h4 class="sub-heading">📍 天桥立 + 伊根 · Google Maps 实景照片</h4>
+        <div class="map-link-grid">
+          <div class="map-link-card">
+            <div class="place-name">天桥立</div>
+            <div class="place-desc">天橋立 · 日本三景之一，沙洲松林</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=天橋立" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">天桥立 View Land</div>
+            <div class="place-desc">天橋立ビューランド · 飞龙观，单轨电车+吊椅</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=天橋立ビューランド" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">伊根湾观光船</div>
+            <div class="place-desc">伊根湾めぐり遊覧船 · 船上喂海鸥</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=伊根湾めぐり遊覧船" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+          <div class="map-link-card">
+            <div class="place-name">伊根舟屋</div>
+            <div class="place-desc">伊根の舟屋 · 日本独特渔村景观</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=伊根の舟屋" target="_blank" rel="noopener">在 Google Maps 查看实景</a>
+          </div>
+        </div>
+
+        <div class="callout warn">
+          <strong>⚠️ 带3岁小朋友注意事项：</strong>
+          <ul style="margin:6px 0 0 16px;">
+            <li>天桥立↔伊根巴士班次有限，末班较早，务必提前查好时刻表</li>
+            <li>伊根湾观光船约每小时2班（整点/30分），首班9:00末班16:00</li>
+            <li>建议住天桥立站附近（交通方便），而非伊根舟屋</li>
+            <li>日本海一侧10月风大，给小朋友带好防风外套</li>
+            <li>如果只想轻松一点，可以只去天桥立当天往返，不去伊根</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 预算&提醒 ==================== -->
+<div class="tab-content" id="tab-budget">
+  <div class="section">
+    <div class="section-title"><span class="icon">💰</span> 预算估算（人民币 · 按1日元≈0.05元换算）</div>
+
+    <table class="budget-table">
+      <thead>
+        <tr><th>项目</th><th>明细</th><th>预算（人民币）</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>早餐</strong></td><td>人均¥50-100 × 8天 × 2大1小</td><td>¥800-1,200</td></tr>
+        <tr><td><strong>午餐</strong></td><td>人均¥50-200 × 7天 × 2大</td><td>¥700-2,800</td></tr>
+        <tr><td><strong>晚餐</strong></td><td>人均¥50-200 × 7天 × 2大</td><td>¥700-2,800</td></tr>
+        <tr><td><strong>打车</strong></td><td>临空城→酒店 + 三宫↔大仓酒店 + 应急</td><td><strong>≤ ¥1,000</strong></td></tr>
+        <tr><td><strong>公共交通</strong></td><td>关西周游卡+六甲山套票+城际JR+当地巴士</td><td>¥2,000-3,500</td></tr>
+        <tr><td><strong>门票</strong></td><td>海游馆+六甲山牧场+铁道博物馆+生驹山+摩天轮等</td><td>¥1,500-2,500</td></tr>
+        <tr class="budget-total"><td colspan="2"><strong>合计（不含住宿）</strong></td><td><strong>¥6,700-13,800</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="icon">🏨</span> 住宿信息汇总</div>
+    <table>
+      <thead><tr><th>酒店</th><th>入住晚</th><th>区域</th><th>特点</th></tr></thead>
+      <tbody>
+        <tr><td><strong>临空奥德西斯套房酒店</strong></td><td>10.2、10.9</td><td>临空城</td><td>临空城站旁，离关西机场近，提供免费送机接驳车（仅上午）</td></tr>
+        <tr><td><strong>神户大仓酒店</strong></td><td>10.3、10.4</td><td>神户港</td><td>美利坚公园旁，港景房，步行可达神户港塔、umie商场，提供免费接驳车至三宫</td></tr>
+        <tr><td><strong>大阪梅田格兰比亚酒店</strong></td><td>10.5、10.6</td><td>大阪梅田</td><td>JR大阪站直连，出行最方便，周边购物资源丰富</td></tr>
+        <tr><td><strong>京都梅小路酒店</strong></td><td>10.7、10.8</td><td>京都梅小路</td><td>梅小路公园旁，近京都铁道博物馆、京都水族馆</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="icon">⚠️</span> 关键提醒汇总</div>
+    <table>
+      <thead><tr><th>项目</th><th>提醒</th></tr></thead>
+      <tbody>
+        <tr><td>奥德赛酒店</td><td><span class="tag red">无机场→酒店接驳车</span> 需乘电车¥370或出租车约¥5,000-6,000 · 仅提供上午送机接驳车</td></tr>
+        <tr><td>神户大仓酒店</td><td>提供免费接驳车至三宫站，约每20分钟一班（11:00-19:00间每10/30/50分发车）</td></tr>
+        <tr><td>大阪格兰比亚酒店</td><td>JR大阪站直连，出站即到，带行李最方便</td></tr>
+        <tr><td>京都梅小路酒店</td><td>梅小路公园旁，离京都铁道博物馆步行可达</td></tr>
+        <tr><td>六甲山牧场</td><td><span class="tag red">周二休</span> 10.4周日正常 · 3岁免费 · 大人¥600 · 周日有牧羊犬表演 · 山上冷带外套</td></tr>
+        <tr><td>六甲山上巴士</td><td><span class="tag red">班次少</span> 约1小时1-2班，需预留等车时间 · 绵羊赛跑13:30开跑，提前占位</td></tr>
+        <tr><td>有马亲子游</td><td><strong>趣味性优先</strong>：鳟鱼池钓鱼 + 玩具博物馆 + 免费足汤 · 自带小毛巾</td></tr>
+        <tr><td>若草山</td><td><span class="tag red">17:00关门</span> 10月日落约17:30 · 想在山顶看日落需17:00前入园后留山 · 登山约30-40分钟</td></tr>
+        <tr><td>生驹山上游乐园</td><td><span class="tag red">周四休</span> 10.6周二正常 · 入园免费，项目¥300-600 · 3岁可玩18个项目 · 12月至3月中旬冬季休园</td></tr>
+        <tr><td>海游馆</td><td><span class="tag red">强烈建议提前买指定时间电子票</span> 成人约 ¥2,700 起（动态定价） · 3岁 ¥700</td></tr>
+        <tr><td>京都铁道博物馆</td><td><span class="tag red">周三休</span> 10.9周五正常 · 大人¥1,500 · 3岁免费</td></tr>
+        <tr><td>和牛餐厅</td><td><span class="tag red">必须预约</span> 神户牛吉祥吉等知名铁板烧餐厅，walk-in很可能无位</td></tr>
+        <tr><td>3岁儿童交通</td><td>多数周游券允许1成人免费带2名1-5岁儿童（不占座）</td></tr>
+        <tr><td>10月天气</td><td>14-23°C · 洋葱式穿法 · 早晚带外套 · 山顶比山下低3-5℃</td></tr>
+        <tr><td>退税规则</td><td>同店同日满5,000日元（未税） · 消耗品和一般物品分开计算 · 带护照原件</td></tr>
+        <tr><td>入境准备</td><td>提前填好 Visit Japan Web (VJW)，截图 QR 码；3岁小朋友身高不足135cm，走人工通道</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== TAB: 出行清单 ==================== -->
+<div class="tab-content" id="tab-checklist">
+  <div class="section">
+    <div class="section-title"><span class="icon">✅</span> 出行准备清单（Checklist）</div>
+    <p style="font-size:13.5px;color:var(--gray);margin-bottom:14px;">
+      点击方框即可勾选。天气参考：10月初关西约 <strong>14–23°C</strong>，早晚偏凉，日本海一侧风大，可能有雨。
+    </p>
+
+    <div class="checklist-grid">
+      <div class="checklist-card">
+        <h4>🛂 证件与文件</h4>
+        <label><input type="checkbox"> 护照原件（大人 + 小朋友）</label>
+        <label><input type="checkbox"> 签证页 / 入境许可（如需）</label>
+        <label><input type="checkbox"> 机票行程单（电子 + 打印备份）</label>
+        <label><input type="checkbox"> <strong>4家酒店预订确认单</strong>（临空奥德西斯×2、神户大仓、大阪格兰比亚、京都梅小路）</label>
+        <label><input type="checkbox"> 旅行保险单（含儿童）</label>
+        <label><input type="checkbox"> 护照/签证/保险复印件 + 电子备份</label>
+        <label><input type="checkbox"> 儿童身份证明（户口本/出生证明复印件）</label>
+        <label><input type="checkbox"> 驾照 + 国际驾照（如需租车）</label>
+        <label><input type="checkbox"> 信用卡 / 银联卡 / 现金（日元）</label>
+        <label><input type="checkbox"> ICOCA / Suica 等交通IC卡</label>
+        <label><input type="checkbox"> 紧急联系人信息（纸质 + 手机）</label>
+        <label><input type="checkbox"> 中国驻日本大使馆/领事馆电话</label>
+        <label><input type="checkbox"> <strong>Visit Japan Web QR 码截图</strong></label>
+      </div>
+
+      <div class="checklist-card">
+        <h4>🧥 衣物 · 大人</h4>
+        <label><input type="checkbox"> 长袖上衣 / 薄毛衣 × 4–5</label>
+        <label><input type="checkbox"> 薄外套 / 开衫 × 1–2</label>
+        <label><input type="checkbox"> 防风外套（六甲山、伊根、生驹山用）</label>
+        <label><input type="checkbox"> 长裤 × 3–4</label>
+        <label><input type="checkbox"> 内衣裤 / 袜子 × 5–7</label>
+        <label><input type="checkbox"> 舒适步行鞋（已磨合）</label>
+        <label><input type="checkbox"> 拖鞋 / 酒店用</label>
+        <label><input type="checkbox"> 睡衣</label>
+        <label><input type="checkbox"> 帽子 / 太阳镜</label>
+        <label><input type="checkbox"> 折叠伞 / 轻便雨衣</label>
+        <label><input type="checkbox"> 小背包（每日出行用）</label>
+        <label><input type="checkbox"> 环保购物袋 / 折叠袋</label>
+      </div>
+
+      <div class="checklist-card">
+        <h4>👶 衣物 · 3岁小朋友</h4>
+        <label><input type="checkbox"> 长袖上衣 × 5–6</label>
+        <label><input type="checkbox"> 薄外套 / 针织开衫 × 2</label>
+        <label><input type="checkbox"> 防风外套 / 轻羽绒（山上用）</label>
+        <label><input type="checkbox"> 长裤 × 4–5</label>
+        <label><input type="checkbox"> 内衣裤 / 袜子 × 7–8</label>
+        <label><input type="checkbox"> 备用整套衣物 × 2–3（放妈妈包）</label>
+        <label><input type="checkbox"> 舒适运动鞋 / 学步鞋（防滑）</label>
+        <label><input type="checkbox"> 睡衣</label>
+        <label><input type="checkbox"> 帽子 / 防晒帽</label>
+        <label><input type="checkbox"> 围兜 / 反穿衣</label>
+        <label><input type="checkbox"> 小毯子 / 安抚巾</label>
+        <label><input type="checkbox"> 雨衣 / 推车雨罩</label>
+      </div>
+
+      <div class="checklist-card">
+        <h4>🍼 儿童专用</h4>
+        <label><input type="checkbox"> 婴儿车（轻便折叠款）</label>
+        <label><input type="checkbox"> 背带 / 腰凳（若草山登山用）</label>
+        <label><input type="checkbox"> 尿不湿 × 足够量 + 备用</label>
+        <label><input type="checkbox"> 湿巾 / 棉柔巾</label>
+        <label><input type="checkbox"> 隔尿垫</label>
+        <label><input type="checkbox"> 奶粉 / 奶瓶（如需）</label>
+        <label><input type="checkbox"> 水杯 / 保温杯</label>
+        <label><input type="checkbox"> 儿童餐具（碗勺、剪刀）</label>
+        <label><input type="checkbox"> 小零食（饼干、果泥、糖果）</label>
+        <label><input type="checkbox"> 安抚玩具 / 绘本 / 贴纸书</label>
+        <label><input type="checkbox"> 便携小马桶圈 / 马桶垫</label>
+        <label><input type="checkbox"> 防走失绳 / 防走失背包</label>
+        <label><input type="checkbox"> 儿童身份卡（写家长电话）</label>
+        <label><input type="checkbox"> <strong>温泉用：小毛巾、防水袋</strong></label>
+      </div>
+
+      <div class="checklist-card">
+        <h4>💊 医药与护理</h4>
+        <label><input type="checkbox"> 成人感冒药 / 退烧药</label>
+        <label><input type="checkbox"> 成人肠胃药 / 止泻药</label>
+        <label><input type="checkbox"> 成人止痛药 / 过敏药</label>
+        <label><input type="checkbox"> 晕车药 / 晕车贴</label>
+        <label><input type="checkbox"> 儿童退烧药（布洛芬/对乙酰氨基酚）</label>
+        <label><input type="checkbox"> 儿童感冒药 / 肠胃药</label>
+        <label><input type="checkbox"> 儿童过敏药</label>
+        <label><input type="checkbox"> 体温计</label>
+        <label><input type="checkbox"> 退热贴</label>
+        <label><input type="checkbox"> 创可贴 / 碘伏棉签</label>
+        <label><input type="checkbox"> 消毒湿巾 / 免洗洗手液</label>
+        <label><input type="checkbox"> 防蚊液 / 驱蚊贴</label>
+        <label><input type="checkbox"> 防晒霜（大人 + 儿童）</label>
+        <label><input type="checkbox"> 口罩（大人 + 儿童）</label>
+        <label><input type="checkbox"> 护手霜 / 润唇膏</label>
+      </div>
+
+      <div class="checklist-card">
+        <h4>🔌 电子产品</h4>
+        <label><input type="checkbox"> 手机 + 充电器</label>
+        <label><input type="checkbox"> 充电宝（随身携带）</label>
+        <label><input type="checkbox"> 转换插头（日本A型，100V）</label>
+        <label><input type="checkbox"> 多口USB充电头</label>
+        <label><input type="checkbox"> 相机 + 存储卡 + 充电器</label>
+        <label><input type="checkbox"> 耳机</label>
+        <label><input type="checkbox"> 儿童平板 / 手机（下载动画片）</label>
+        <label><input type="checkbox"> 日本上网卡 / eSIM / 随身WiFi</label>
+        <label><input type="checkbox"> 离线地图（Google Maps 离线区域）</label>
+        <label><input type="checkbox"> 翻译App（VoiceTra / Google翻译）</label>
+        <label><input type="checkbox"> 充电线备用 × 2</label>
+        <label><input type="checkbox"> 插线板（酒店插座少时用）</label>
+      </div>
+
+      <div class="checklist-card">
+        <h4>🚨 应急与其他</h4>
+        <label><input type="checkbox"> 旅行保险卡 / 理赔电话</label>
+        <label><input type="checkbox"> 日本报警 110 / 急救 119</label>
+        <label><input type="checkbox"> <strong>4家酒店地址日文版</strong>（给出租车司机看）</label>
+        <label><input type="checkbox"> 常用日语短语截图</label>
+        <label><input type="checkbox"> 备用现金（日元，分散放）</label>
+        <label><input type="checkbox"> 备用信用卡</label>
+        <label><input type="checkbox"> 防水袋 / 密封袋</label>
+        <label><input type="checkbox"> 行李秤</label>
+        <label><input type="checkbox"> 行李牌（写联系方式）</label>
+        <label><input type="checkbox"> 小锁（行李拉链用）</label>
+        <label><input type="checkbox"> 折叠伞 / 雨衣</label>
+        <label><input type="checkbox"> 保温杯 / 水壶</label>
+        <label><input type="checkbox"> 小药盒（分装每日药）</label>
+        <label><input type="checkbox"> 纸巾 / 湿巾</label>
+        <label><input type="checkbox"> 垃圾袋（日本街头垃圾桶少）</label>
+        <label><input type="checkbox"> 儿童安全座椅（如需租车）</label>
+      </div>
+    </div>
+
+    <div class="callout tip" style="margin-top:18px;">
+      <strong>💡 出发前最后检查：</strong>
+      <ul style="margin:8px 0 0 18px;">
+        <li>护照有效期是否超过6个月</li>
+        <li><strong>Visit Japan Web 是否已填好并截图保存 QR 码</strong></li>
+        <li>手机是否开通国际漫游 / 已买好上网卡</li>
+        <li>充电宝是否随身携带（不可托运）</li>
+        <li>婴儿车是否可折叠上飞机（确认航司规定）</li>
+        <li>儿童常用药是否带足（日本买药需处方）</li>
+        <li><strong>4家酒店预订确认单是否已保存</strong></li>
+        <li>六甲山、海游馆、铁道博物馆等营业日是否已确认</li>
+        <li>天桥立/伊根备选方案是否已查好天气和巴士时刻</li>
+        <li><strong>大阪海游馆指定时间电子票是否已买好</strong></li>
+        <li>确认航班航站楼（T1还是T2）</li>
+        <li><strong>有马温泉：是否带好小毛巾（足汤用）</strong></li>
+        <li><strong>生驹山上游乐园：10.6是周二，正常开放（周四休）</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TAB: 地图导航 ==================== -->
+<div class="tab-content" id="tab-map">
+  <div class="section">
+    <div class="section-title"><span class="icon">🗺️</span> 每日地图导航方法</div>
+
+    <div class="callout info">
+      <strong>方法：Google My Maps</strong><br>
+      1. 电脑打开 <strong>Google My Maps</strong>（mymaps.google.com）<br>
+      2. 新建地图，按天添加图层<br>
+      3. 每天一个图层，添加当天所有地点（酒店、景点、餐厅）<br>
+      4. 保存后可在手机上打开，实时导航
+    </div>
+
+    <h4 class="sub-heading">每日地点清单（复制到Google Maps搜索）</h4>
+    <table>
+      <thead><tr><th>日期</th><th>地点清单</th></tr></thead>
+      <tbody>
+        <tr><td><strong>10.2</strong></td><td>关西机场 → 临空城站 → 临空奥德西斯套房酒店</td></tr>
+        <tr><td><strong>10.3</strong></td><td>神户大仓酒店 → 须磨离宫公园 / 王子动物园 → umie商场</td></tr>
+        <tr><td><strong>10.4</strong></td><td>神户大仓酒店 → 六甲站 → 六甲缆车下站 → 六甲山牧场 → 六甲有马缆车 → 有马温泉 → 有马温泉（太閤橋）巴士站</td></tr>
+        <tr><td><strong>10.5</strong></td><td>神户大仓酒店 → 大阪梅田站 → 大阪梅田格兰比亚酒店 → 阪急百货</td></tr>
+        <tr><td><strong>10.6</strong></td><td>大阪梅田格兰比亚酒店 → 近铁奈良站 → 奈良公园 → 东大寺 → 若草山 → 近铁生驹站 → 生駒ケーブル鳥居前駅 → 生駒山上遊園地</td></tr>
+        <tr><td><strong>10.7</strong></td><td>大阪梅田格兰比亚酒店 → 京都站 → 梅小路公园 → 京都梅小路酒店</td></tr>
+        <tr><td><strong>10.8</strong></td><td>京都站 → 嵯峨岚山站 → 竹林小径 → 天龍寺 → 渡月桥</td></tr>
+        <tr><td><strong>10.9</strong></td><td>京都铁道博物馆 → 京都站 → 临空城站 → 临空奥德西斯套房酒店</td></tr>
+        <tr><td><strong>10.10</strong></td><td>临空城站 → 关西机场</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout tip">
+      <strong>💡 提示：</strong>Google Maps公共交通模式不支持多目的地，建议先用驾车模式看大概位置，再用公共交通模式逐段导航。
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div style="text-align:center;color:var(--gray);font-size:12px;margin-top:32px;padding-top:16px;border-top:1px solid var(--border);">
+  计划书生成日期：2026年9月17日 · 信息仅供参考，出发前请确认最新时刻表和营业信息<br>
+  所有「📍 在 Google Maps 查看实景」按钮均可点击，查看用户上传的真实照片与最新评价
+</div>
+
+</div>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.tab-btn');
+  var contents = document.querySelectorAll('.tab-content');
+
+  function showTab(id) {
+    contents.forEach(function(el) {
+      el.classList.toggle('active', el.id === id);
+    });
+    tabs.forEach(function(el) {
+      el.classList.toggle('active', el.dataset.tab === id);
+    });
+    try { localStorage.setItem('kansaiActiveTab', id); } catch(e) {}
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  tabs.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      showTab(btn.dataset.tab);
+    });
+  });
+
+  try {
+    var saved = localStorage.getItem('kansaiActiveTab');
+    if (saved && document.getElementById(saved)) {
+      showTab(saved);
+    }
+  } catch(e) {}
+})();
+</script>
+
+</body>
+</html>
